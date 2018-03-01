@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangguang.dao.UserDao">
+
+    <resultMap id="UserMap" type="com.wangguang.entity.User">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="user_name" property="userName" />
+		<result column="password" property="password" />
+		<result column="age" property="age" />
+    </resultMap>
+
+
+	<!--表名 -->
+	<sql id="tableName">
+		user
+	</sql>
+	
+	<!-- 字段 -->
+	<sql id="Field">
+		id,
+		user_name,
+		password,
+		age
+	</sql>
+	
+	<!-- 字段值 -->
+	<sql id="FieldValue">
+		#{id, jdbcType=INT},
+		#{userName, jdbcType=VARCHAR},
+		#{password, jdbcType=VARCHAR},
+		#{age, jdbcType=INT}
+	</sql>
+
+	<!-- 查询全部记录 -->
+    <select id="selectByPrimaryKey" resultMap="UserMap">
+        SELECT
+        	<include refid="Field"></include>
+        FROM
+        	<include refid="tableName"></include>
+		WHERE
+			1 = 1
+    </select>
+	
+
+
+
+
+
+</mapper>

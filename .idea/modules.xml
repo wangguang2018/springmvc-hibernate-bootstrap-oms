@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springMvcDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/springMvcDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springMvcDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springMvcDemo_main.iml" group="springMvcDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springMvcDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springMvcDemo_test.iml" group="springMvcDemo" />
+    </modules>
+  </component>
+</project>
