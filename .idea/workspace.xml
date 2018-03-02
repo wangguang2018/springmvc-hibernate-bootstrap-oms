@@ -6,32 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab51cdf6-efe9-41e5-b829-ef992c28b184" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_wangguang___springMvcDemo_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_wangguang___springMvcDemo_1_0_SNAPSHOT_war__exploded_.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/springMvcDemo_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/springMvcDemo_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/controller/UserController.class" afterPath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/dao/UserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/service/UserService.class" afterPath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/build/libs/exploded/springMvcDemo-1.0-SNAPSHOT.war/WEB-INF/classes/com/wangguang/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/wangguang/controller/UserController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/wangguang/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/wangguang/dao/UserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/wangguang/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/wangguang/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/wangguang/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/wangguang/service/impl/UserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangguang/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangguang/dao/UserDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangguang/mapper/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangguang/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangguang/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mybatis.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    </list>
+    <list default="true" id="ab51cdf6-efe9-41e5-b829-ef992c28b184" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -985,7 +960,7 @@
       <workItem from="1519889905133" duration="5027000" />
       <workItem from="1519954170770" duration="127000" />
       <workItem from="1519954417083" duration="2426000" />
-      <workItem from="1519972344982" duration="1197000" />
+      <workItem from="1519972344982" duration="1444000" />
     </task>
     <servers />
   </component>
@@ -1022,7 +997,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65530000" />
+    <option name="totallyTimeSpent" value="65777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1040,7 +1015,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7455556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1050,8 +1025,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
