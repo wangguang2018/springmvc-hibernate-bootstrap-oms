@@ -29,14 +29,14 @@ public class UserController {
 
     @RequestMapping("/hello")
     public String helloWorld() throws IOException{
-        Resource resource = new  ClassPathResource("/spring-mvcs.xml");
-        byte[] byteArray = FileCopyUtils.copyToByteArray(resource.getInputStream());
+       /* Resource resource = new  ClassPathResource("/spring-mvcs.xml");
+        byte[] byteArray = FileCopyUtils.copyToByteArray(resource.getInputStream());*/
         return "user/success";
     }
 
     @RequestMapping("/user/save")
     public String save(User user,Model model){
-       userService.save(user);
+       //userService.save(user);
         return "user/success";
     }
 

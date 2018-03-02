@@ -10,10 +10,6 @@ import com.wangguang.entity.User;
  */
 public interface UserService {
 
-    public void save(User user);
-
-    public User getUserById(int userId);
-
 
 }
 

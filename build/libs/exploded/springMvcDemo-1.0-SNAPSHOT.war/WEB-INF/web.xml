@@ -3,18 +3,17 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 
-	<display-name>springmvcdemo</display-name>
+	<display-name>SpringDataJPA</display-name>
 
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring-mybatis.xml</param-value>
-	</context-param>
+
+
+
 
 	<!--Spring ApplicationContext 载入 -->
-	<listener>
+	<!--<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-		<!--<listener-class>com.dm.core.spring.listener.InitProfilesContextLoaderListener</listener-class>-->
-	</listener>
+		&lt;!&ndash;<listener-class>com.dm.core.spring.listener.InitProfilesContextLoaderListener</listener-class>&ndash;&gt;
+	</listener>-->
 
 
 	<!-- Spring MVC Servlet -->
