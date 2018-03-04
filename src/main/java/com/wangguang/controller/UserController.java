@@ -24,53 +24,47 @@ import java.util.*;
 @Controller
 public class UserController {
 
-    @javax.annotation.Resource
-    private UserService userService;
+    @Autowired
+    UserService userService;
 
-    @RequestMapping("/hello")
-    public String helloWorld() throws IOException{
-       /* Resource resource = new  ClassPathResource("/spring-mvcs.xml");
-        byte[] byteArray = FileCopyUtils.copyToByteArray(resource.getInputStream());*/
+    @RequestMapping("/")
+    @ResponseBody
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/info")
+    public String info(){
         return "user/success";
     }
 
-    @RequestMapping("/user/save")
-    public String save(User user,Model model){
-       //userService.save(user);
-        return "user/success";
-    }
-
-    @RequestMapping("/user/map")
+    @RequestMapping("/findall")
     @ResponseBody
-    public List getMap(){
-        List<UserDto> dtos = new ArrayList<UserDto>();
-        UserDto userDto = new UserDto();
-        userDto.setAge(11);
-        dtos.add(userDto);
-        if(1==1){
-            throw new NullPointerException();
-        }
-        return dtos;
+    public Map<String, Object> getUser(){
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("state", "success");
+        map.put("data", userService.findAll());
+        return map;
     }
 
-
-    @RequestMapping("/user/byteArray")
+    @RequestMapping("/findbyid")
     @ResponseBody
-    public ResponseEntity<byte[]> getByteArray(){
-        Resource resource = new  ClassPathResource("/spring-mvc.xml");
-        byte[] byteArray = null;
-        try {
-            byteArray = FileCopyUtils.copyToByteArray(resource.getInputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("length:" + byteArray.length);
-        ResponseEntity<byte[]> entity = new ResponseEntity<byte[]>(byteArray, HttpStatus.OK);
-        return entity;
+    public Map<String, Object> findById(Integer id){
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("state", "success");
+        map.put("data", userService.findById(id));
+        return map;
     }
 
-    @RequestMapping("/edit")
-    public String edit(){
-        return "user/edit";
+    @RequestMapping("/add")
+    @ResponseBody
+    public Map<String, Object> save(String name){
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("state", "success");
+        map.put("data", userService.save(name));
+        return map;
     }
+
+
+
 }

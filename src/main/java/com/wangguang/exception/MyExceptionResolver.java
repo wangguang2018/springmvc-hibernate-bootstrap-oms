@@ -1,3 +1,4 @@
+/*
 package com.wangguang.exception;
 
 import org.springframework.web.servlet.ModelAndView;
@@ -12,10 +13,12 @@ public class MyExceptionResolver extends SimpleMappingExceptionResolver {
     @Override
     protected ModelAndView doResolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
 
-        /*if(ex instanceof NumberFormatException){
+        */
+/*if(ex instanceof NumberFormatException){
             ModelAndView view = getModelAndView("error/NumberFormatExceptions",ex);
             return view;
-        }*/
+        }*//*
+
 
         // 判断是否 Ajax 请求
         if ((request.getHeader("accept").indexOf("application/json") > -1 ||
@@ -40,3 +43,4 @@ public class MyExceptionResolver extends SimpleMappingExceptionResolver {
 
 
 }
+*/

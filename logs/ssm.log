@@ -3,7 +3,7 @@
 [WARN] [2018-02-28 15:46:37][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.cn.hnust.dao]' package. Please check your configuration.
 [INFO] [2018-02-28 15:46:37][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-02-28 15:46:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-02-28 15:46:37][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6e20b53a] to prepare test instance [TestMyBatis@71809907]
+[ERROR] [2018-02-28 15:46:37][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6e20b53a] to prepare test instance [TestMySpring@71809907]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -65,7 +65,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [WARN] [2018-02-28 15:46:46][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.cn.hnust.dao]' package. Please check your configuration.
 [INFO] [2018-02-28 15:46:46][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-02-28 15:46:46][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-02-28 15:46:47][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c44c582] to prepare test instance [TestMyBatis@67d18ed7]
+[ERROR] [2018-02-28 15:46:47][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c44c582] to prepare test instance [TestMySpring@67d18ed7]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -127,7 +127,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [WARN] [2018-02-28 15:47:03][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.cn.hnust.dao]' package. Please check your configuration.
 [INFO] [2018-02-28 15:47:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-02-28 15:47:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-02-28 15:47:03][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ffead27] to prepare test instance [TestMyBatis@6356695f]
+[ERROR] [2018-02-28 15:47:03][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ffead27] to prepare test instance [TestMySpring@6356695f]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -188,7 +188,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-02-28 15:48:01][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6d00a15d: startup date [Wed Feb 28 15:48:01 CST 2018]; root of context hierarchy
 [INFO] [2018-02-28 15:48:01][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-02-28 15:48:01][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-02-28 15:48:01][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@74f0ea28] to prepare test instance [TestMyBatis@f6efaab]
+[ERROR] [2018-02-28 15:48:01][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@74f0ea28] to prepare test instance [TestMySpring@f6efaab]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -250,7 +250,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-02-28 15:53:51][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6d00a15d: startup date [Wed Feb 28 15:53:51 CST 2018]; root of context hierarchy
 [INFO] [2018-02-28 15:53:51][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-02-28 15:53:51][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-02-28 15:53:51][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f6efaab] to prepare test instance [TestMyBatis@3c19aaa5]
+[ERROR] [2018-02-28 15:53:51][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f6efaab] to prepare test instance [TestMySpring@3c19aaa5]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -312,7 +312,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 10:49:47][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1753acfe: startup date [Thu Mar 01 10:49:47 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 10:49:47][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 10:49:47][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 10:49:47][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@313ac989] to prepare test instance [TestMyBatis@4562e04d]
+[ERROR] [2018-03-01 10:49:47][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@313ac989] to prepare test instance [TestMySpring@4562e04d]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -379,7 +379,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 10:56:50][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/map],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List com.wangguang.controller.UserController.getMap()
 [INFO] [2018-03-01 10:56:50][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.wangguang.controller.UserController.helloWorld() throws java.io.IOException
 [INFO] [2018-03-01 10:56:50][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/user/byteArray],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wangguang.controller.UserController.getByteArray()
-[ERROR] [2018-03-01 10:56:50][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35aea049] to prepare test instance [TestMyBatis@7205765b]
+[ERROR] [2018-03-01 10:56:50][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35aea049] to prepare test instance [TestMySpring@7205765b]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -434,7 +434,7 @@ Caused by: javax.validation.ValidationException: Unable to create a Configuratio
 [INFO] [2018-03-01 11:02:06][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6d00a15d: startup date [Thu Mar 01 11:02:06 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:02:06][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:02:06][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:02:06][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f6efaab] to prepare test instance [TestMyBatis@3c19aaa5]
+[ERROR] [2018-03-01 11:02:06][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f6efaab] to prepare test instance [TestMySpring@3c19aaa5]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -496,7 +496,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:03:25][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 11:03:25 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:03:25][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:03:25][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:03:25][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@145f66e3] to prepare test instance [TestMyBatis@3023df74]
+[ERROR] [2018-03-01 11:03:25][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@145f66e3] to prepare test instance [TestMySpring@3023df74]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -558,7 +558,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:07:44][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@223f3642: startup date [Thu Mar 01 11:07:44 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:07:45][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:07:45][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:07:45][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b14918a] to prepare test instance [TestMyBatis@6d1ef78d]
+[ERROR] [2018-03-01 11:07:45][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b14918a] to prepare test instance [TestMySpring@6d1ef78d]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -620,7 +620,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:08:17][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:08:17 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:08:17][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:08:17][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:08:17][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMyBatis@3349e9bb]
+[ERROR] [2018-03-01 11:08:17][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMySpring@3349e9bb]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -682,7 +682,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:09:03][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:09:03 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:09:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:09:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:09:03][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMyBatis@3349e9bb]
+[ERROR] [2018-03-01 11:09:03][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMySpring@3349e9bb]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -744,7 +744,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:10:20][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:10:20 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:10:20][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:10:20][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:10:20][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMyBatis@3349e9bb]
+[ERROR] [2018-03-01 11:10:20][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMySpring@3349e9bb]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -806,7 +806,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:15:42][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:15:42 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:15:42][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:15:42][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:15:42][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59662a0b] to prepare test instance [TestMyBatis@77fbd92c]
+[ERROR] [2018-03-01 11:15:42][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59662a0b] to prepare test instance [TestMySpring@77fbd92c]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -870,7 +870,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve resource locati
 [INFO] [2018-03-01 11:17:33][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:17:33 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:17:33][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:17:33][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:17:33][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67c27493] to prepare test instance [TestMyBatis@1a482e36]
+[ERROR] [2018-03-01 11:17:33][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67c27493] to prepare test instance [TestMySpring@1a482e36]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -961,7 +961,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve resource locati
 [INFO] [2018-03-01 11:44:08][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:44:08 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:44:08][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:44:08][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:44:09][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMyBatis@3349e9bb]
+[ERROR] [2018-03-01 11:44:09][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c19aaa5] to prepare test instance [TestMySpring@3349e9bb]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -1041,7 +1041,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:51:05][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 11:51:04 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:51:05][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:51:05][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:51:05][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@409bf450] to prepare test instance [TestMyBatis@38d8f54a]
+[ERROR] [2018-03-01 11:51:05][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@409bf450] to prepare test instance [TestMySpring@38d8f54a]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -1103,7 +1103,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:51:15][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@27ae2fd0: startup date [Thu Mar 01 11:51:15 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 11:51:15][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:51:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 11:51:15][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e19bb76] to prepare test instance [TestMyBatis@512535ff]
+[ERROR] [2018-03-01 11:51:15][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e19bb76] to prepare test instance [TestMySpring@512535ff]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -1169,7 +1169,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 11:53:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 11:53:07][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 11:53:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-03-01 11:53:37][TestMyBatis]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
+[INFO] [2018-03-01 11:53:37][TestMySpring]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
 [INFO] [2018-03-01 11:53:37][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@27ae2fd0: startup date [Thu Mar 01 11:53:06 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 14:10:44][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:10:44][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:10:44 CST 2018]; root of context hierarchy
@@ -1179,7 +1179,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 14:10:45][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:10:45][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 14:10:45][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-03-01 14:10:45][TestMyBatis]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
+[INFO] [2018-03-01 14:10:45][TestMySpring]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
 [INFO] [2018-03-01 14:10:45][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:10:44 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 14:12:19][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:12:19][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 14:12:19 CST 2018]; root of context hierarchy
@@ -1189,7 +1189,7 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 14:12:19][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:12:19][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 14:12:19][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-03-01 14:12:20][TestMyBatis]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
+[INFO] [2018-03-01 14:12:20][TestMySpring]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
 [INFO] [2018-03-01 14:12:20][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@51efea79: startup date [Thu Mar 01 14:12:19 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 14:13:02][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:13:02][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:13:02 CST 2018]; root of context hierarchy
@@ -1199,13 +1199,13 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 14:13:03][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:13:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 14:13:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-03-01 14:13:03][TestMyBatis]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
+[INFO] [2018-03-01 14:13:03][TestMySpring]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
 [INFO] [2018-03-01 14:13:03][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:13:02 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 14:13:15][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:13:16][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:13:16 CST 2018]; root of context hierarchy
 [INFO] [2018-03-01 14:13:16][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 14:13:16][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[ERROR] [2018-03-01 14:13:16][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4562e04d] to prepare test instance [TestMyBatis@2a65fe7c]
+[ERROR] [2018-03-01 14:13:16][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4562e04d] to prepare test instance [TestMySpring@2a65fe7c]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
 	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
@@ -1271,5 +1271,5 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2018-03-01 14:20:09][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2018-03-01 14:20:09][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
 [INFO] [2018-03-01 14:20:09][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-03-01 14:20:10][TestMyBatis]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
+[INFO] [2018-03-01 14:20:10][TestMySpring]{"age":24,"id":1,"password":"sfasgfaf","userName":"测试"}
 [INFO] [2018-03-01 14:20:10][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Thu Mar 01 14:20:08 CST 2018]; root of context hierarchy

@@ -1,3 +1,4 @@
+/*
 package com.wangguang.interceptors;
 
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -8,9 +9,11 @@ public class HelloInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response, Object handler) throws Exception {
-        /*if("/hello".equals(request.getRequestURI()) || "/static/css/user.css".equals(request.getRequestURI())){
+        */
+/*if("/hello".equals(request.getRequestURI()) || "/static/css/user.css".equals(request.getRequestURI())){
             return true;
-        }*/
+        }*//*
+
         return true;
     }
 
@@ -24,3 +27,4 @@ public class HelloInterceptor implements HandlerInterceptor {
 
     }
 }
+*/

@@ -1,12 +1,7 @@
 package com.wangguang.entity;
 
-import org.springframework.stereotype.Component;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * Entity -
@@ -14,14 +9,15 @@ import java.util.Date;
  * @author peakren
  * @since 2017-10-29
  */
-@Table(name = "user")
+@Entity
+@Table
 public class User implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String userName;
-
-    private String password;
+    private String name;
 
     private int age;
 
@@ -34,20 +30,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {

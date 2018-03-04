@@ -26,12 +26,12 @@
 		<property name="maxUploadSize" value="5242880" ></property>
 	</bean>
 	
-	<mvc:interceptors>
+	<!--<mvc:interceptors>
 		<bean class="com.wangguang.interceptors.HelloInterceptor"></bean>
-	</mvc:interceptors>
+	</mvc:interceptors>-->
 
 
-	<bean class="com.wangguang.exception.MyExceptionResolver">
+	<!--<bean class="com.wangguang.exception.MyExceptionResolver">
 		<property name="exceptionMappings">
 			<props>
 				<prop key="NullPointerException">error/NullPointerExceptions</prop>
@@ -46,7 +46,7 @@
 		</property>
 		<property name="defaultErrorView" value="error/Exceptions"/>
 		<property name="defaultStatusCode" value="404"/>
-	</bean>
+	</bean>-->
 
 	
 
