@@ -168,7 +168,7 @@
                 <%--</li>--%>
                 <%--<!-- END Contacts menu-->--%>
             </ul>
-            <ul class="nav navbar-nav navbar-right" style="float: right; height: 100%;
+            <ul class="nav navbar-nav navbar-right" style="float: right; /*height: 100%;*/
     color: #333;
     font-size: 15px;
     line-height: 50px; padding-right: 10px ">
