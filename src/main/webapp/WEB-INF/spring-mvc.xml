@@ -26,9 +26,9 @@
 		<property name="maxUploadSize" value="5242880" ></property>
 	</bean>
 	
-	<!--<mvc:interceptors>
-		<bean class="com.wangguang.interceptors.HelloInterceptor"></bean>
-	</mvc:interceptors>-->
+	<mvc:interceptors>
+		<bean class="com.wangguang.interceptor.ControllerInterceptor"></bean>
+	</mvc:interceptors>
 
 
 	<!--<bean class="com.wangguang.exception.MyExceptionResolver">

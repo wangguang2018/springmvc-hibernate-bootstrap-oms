@@ -7,5 +7,5 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <footer>
-    <span>小白</span>
+    <span>${projectFoot}</span>
 </footer>
