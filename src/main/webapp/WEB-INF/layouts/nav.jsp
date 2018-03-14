@@ -34,7 +34,7 @@
                     <c:if test="${active == 'zhangshang'}">
                     掌上娃娃机管理系统
                     </c:if>--%>
-                    小白系统
+                    后台框架系统
                 </div>
                 <div class="brand-logo-collapsed">
                     <img src="${ctx}/static/img/logo-single.png" alt="App Logo" class="img-responsive">

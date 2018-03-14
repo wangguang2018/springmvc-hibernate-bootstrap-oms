@@ -24,5 +24,6 @@
     <c:import url="/WEB-INF/layouts/content_footer.jsp" />
 
 </div>
+<c:import url="/WEB-INF/layouts/footer.jsp" />
 </body>
 </html>
