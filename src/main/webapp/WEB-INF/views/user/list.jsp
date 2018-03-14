@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: wangyy
@@ -8,11 +9,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <c:import url="/WEB-INF/layouts/header.jsp">
+        <%--<c:param name="question" value="抓取记录管理" />--%>
+    </c:import>
+    <title>标题</title>
 </head>
 <body>
 <div class="wrapper">
     <c:import url="/WEB-INF/layouts/nav.jsp"/>
+        <section>
+            <div class="content-wrapper">
+            </div>
+        </section>
+    <c:import url="/WEB-INF/layouts/content_footer.jsp" />
+
 </div>
 </body>
 </html>

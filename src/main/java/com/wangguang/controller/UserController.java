@@ -11,10 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -22,10 +19,18 @@ import java.util.*;
 
 @SessionAttributes("user")
 @Controller
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     UserService userService;
+
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String list(){
+        return "user/list";
+    }
+
 
     @RequestMapping("/")
     @ResponseBody
