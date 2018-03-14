@@ -7,19 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab51cdf6-efe9-41e5-b829-ef992c28b184" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/controller/common/WebController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/footer.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/additional-methods.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery-1.11.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.easing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.localize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.slimscroll.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.storageapi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.validate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/entity/ChargeOption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/entity/common/BaseEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumChargeMark.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumFlag.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/nav.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -81,26 +74,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/footer.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tag.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tag.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/tag.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="198">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,8 +109,8 @@
       <file leaf-file-name="WebController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/controller/common/WebController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+            <state relative-caret-position="103">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,11 +118,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.easing.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/third/jquery/jquery.easing.js">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/entity/common/BaseEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChargeOption.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/entity/ChargeOption.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumChargeMark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumChargeMark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumFlag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumFlag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,9 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CharacterEncodingFilter</find>
-      <find>sel</find>
-      <find>ervlet-api</find>
       <find>interce</find>
       <find>servlet-api</find>
       <find>taglibs</find>
@@ -198,7 +212,10 @@
       <find>jquery-1.11.0.min.js</find>
       <find>bb--</find>
       <find>tag.jsp</find>
+      <find>mysql</find>
       <find>ctx</find>
+      <find>jpaProperties</find>
+      <find>sys_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -502,12 +519,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/user.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/success.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/403.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/404.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/500.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/NullPointerException.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/IOException.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/NumberFormatException.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error/Exceptions.jsp" />
@@ -553,6 +564,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wangguang/controller/common/WebController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/tag.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumFlag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangguang/entity/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangguang/entity/common/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumChargeMark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wangguang/entity/ChargeOption.java" />
       </list>
     </option>
   </component>
@@ -570,8 +587,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="393" />
-    <option name="width" value="1245" />
+    <option name="x" value="311" />
+    <option name="y" value="6" />
+    <option name="width" value="1377" />
     <option name="height" value="1012" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -632,7 +650,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wangguang" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
@@ -641,8 +659,17 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wangguang" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frameForSpringMvcJpaHibernate" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wangguang" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
@@ -699,7 +726,7 @@
     <property name="project.structure.proportion" value="0.15324676" />
     <property name="project.structure.side.proportion" value="0.3397239" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="SearchEverywhereHistoryKey" value="tag&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/tag.jsp&#10;foot&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;tag.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/tag.jsp&#10;footer.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;header.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/header.jsp&#10;list.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/views/user/list.jsp&#10;fo&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;app.js&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/static/js/app.js&#10;appl&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;nav.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;head&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/header.jsp&#10;na&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;app.css&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/static/css/framework/app.css&#10;favicon.ico&#9;FILE&#9;jar://C:/Users/wangyy/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.1/4e85d6f9a50017296937f55e28e2661581748b4f/ehcache-2.10.1-sources.jar!/org/eclipse/jetty/favicon.ico&#10;userc&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/controller/UserController.java&#10;spring&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/spring-mvc.xml&#10;list.js&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/views/user/list.jsp&#10;us&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/controller/UserController.java&#10;web.xml&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;web&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;user&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/UserDao.java&#10;app&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;users&#9;PSI&#9;JAVA://com.wangguang.service.impl.UserServiceImpl&#10;userdaoi&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/impl/UserDaoImpl.java&#10;userd&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/UserDao.java&#10;ap&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;User&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/entity/User.java&#10;bui&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/build.gradle&#10;userdao&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/impl/UserDaoImpl.java&#10;we&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;WEB&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;success&#9;FILE&#9;file://D:/git-wangguang/springMvcJpaHibernate/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;usercon&#9;PSI&#9;JAVA://com.wangguang.controller.UserController&#10;spring-&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/spring-mvc.xml&#10;w&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml&#10;UserService&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/service/UserService.java&#10;test&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;edit.jsp&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/edit.jsp&#10;web.&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml&#10;te&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;userm&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/mapper/UserMapper.xml&#10;t&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;my&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/exception/MyExceptionResolver.java&#10;U&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/controller/UserController.java&#10;spr&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/spring-mvc.xml&#10;succes&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;succ&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;web.xm&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml" />
+    <property name="SearchEverywhereHistoryKey" value="webc&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/controller/common/WebController.java&#10;tag&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/tag.jsp&#10;foot&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;tag.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/tag.jsp&#10;footer.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;header.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/header.jsp&#10;list.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/views/user/list.jsp&#10;fo&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;app.js&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/static/js/app.js&#10;appl&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;nav.jsp&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;head&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/header.jsp&#10;na&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;app.css&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/static/css/framework/app.css&#10;favicon.ico&#9;FILE&#9;jar://C:/Users/wangyy/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.1/4e85d6f9a50017296937f55e28e2661581748b4f/ehcache-2.10.1-sources.jar!/org/eclipse/jetty/favicon.ico&#10;userc&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/controller/UserController.java&#10;spring&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/spring-mvc.xml&#10;list.js&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/views/user/list.jsp&#10;us&#9;FILE&#9;file://D:/git-wangguang/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/controller/UserController.java&#10;web.xml&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;web&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;user&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/UserDao.java&#10;app&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;users&#9;PSI&#9;JAVA://com.wangguang.service.impl.UserServiceImpl&#10;userdaoi&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/impl/UserDaoImpl.java&#10;userd&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/UserDao.java&#10;ap&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/resources/applicationContext.xml&#10;User&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/entity/User.java&#10;bui&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/build.gradle&#10;userdao&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/java/com/wangguang/dao/impl/UserDaoImpl.java&#10;we&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;WEB&#9;FILE&#9;file://D:/workproject/git/springmvcjpahibernite/frameForSpringMvcJpaHibernate/src/main/webapp/WEB-INF/web.xml&#10;success&#9;FILE&#9;file://D:/git-wangguang/springMvcJpaHibernate/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;usercon&#9;PSI&#9;JAVA://com.wangguang.controller.UserController&#10;spring-&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/spring-mvc.xml&#10;w&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml&#10;UserService&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/service/UserService.java&#10;test&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;edit.jsp&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/edit.jsp&#10;web.&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml&#10;te&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;userm&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/mapper/UserMapper.xml&#10;t&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/test/java/TestMyBatis.java&#10;my&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/exception/MyExceptionResolver.java&#10;U&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/java/com/wangguang/controller/UserController.java&#10;spr&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/spring-mvc.xml&#10;succes&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;succ&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/pages/user/success.jsp&#10;web.xm&#9;FILE&#9;file://D:/git-wangguang/springMvcDemo/src/main/webapp/WEB-INF/web.xml" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ignore_missing_gitignore" value="true" />
   </component>
@@ -712,11 +739,11 @@
       <recent name="D:\git-wangguang\frameForSpringMvcJpaHibernate\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangguang.enums" />
+      <recent name="com.wangguang.entity" />
       <recent name="com.wangguang.context" />
       <recent name="com.wangguang.service.impl" />
       <recent name="com.wangguang.service" />
-      <recent name="com.wangguang.entity" />
-      <recent name="com.wangguang.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workproject\git\springmvcjpahibernite\frameForSpringMvcJpaHibernate\src\main\resources\META-INF" />
@@ -1048,7 +1075,7 @@
       <workItem from="1520903138489" duration="1258000" />
       <workItem from="1520928225696" duration="2457000" />
       <workItem from="1520990213872" duration="8151000" />
-      <workItem from="1521008527940" duration="8237000" />
+      <workItem from="1521008527940" duration="11252000" />
     </task>
     <servers />
   </component>
@@ -1085,10 +1112,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111353000" />
+    <option name="totallyTimeSpent" value="114368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1100,7 +1128,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3988889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34111112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36201116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1110,7 +1138,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26927373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27555555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30555555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26745436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1170,18 +1198,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.0.0.RELEASE/5223cc0bd5cd9fd7fce1c72046577e937cc378e9/spring-web-4.0.0.RELEASE-sources.jar!/org/springframework/web/context/ContextLoaderListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mybatis.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax/javaee-api/7.0/a0c99c2a5626efb823da1500786e92c1bf6a57cf/javaee-api-7.0-sources.jar!/javax/persistence/Table.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1320,14 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/interceptors/HelloInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1394,7 +1402,7 @@
         <state relative-caret-position="150">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1465,16 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/controller/common/WebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/interceptor/ControllerInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1495,9 +1493,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/layouts/tag.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.5.RELEASE/6d6268e82b35921d9daf4cfda9a2f1bd99afd87a/spring-web-4.2.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/controller/common/WebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/entity/common/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/enums/EnumChargeMark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wangguang/entity/ChargeOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
