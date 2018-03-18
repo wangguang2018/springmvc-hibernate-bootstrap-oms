@@ -30,6 +30,23 @@
 		<bean class="com.wangguang.interceptor.ControllerInterceptor"></bean>
 	</mvc:interceptors>
 
+	<!--<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/*"/>
+			<mvc:mapping path="/*/*" />
+			<mvc:mapping path="/*/*/*" />
+			<mvc:mapping path="/*/*/*/*" />
+			<mvc:mapping path="/*/*/*/*/*" />
+			<mvc:exclude-mapping path="/login" />
+			<mvc:exclude-mapping path="/logout" />
+			<mvc:exclude-mapping path="/static/*" />
+			<mvc:exclude-mapping path="/static/*/*" />
+			<mvc:exclude-mapping path="/static/*/*/*" />
+			<mvc:exclude-mapping path="/static/*/*/*/*" />
+			<bean class="com.wangguang.interceptor.MenuInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>-->
+
 
 	<!--<bean class="com.wangguang.exception.MyExceptionResolver">
 		<property name="exceptionMappings">

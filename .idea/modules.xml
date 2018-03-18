@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_main.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_main.iml" group="frameForSpringMvcJpaHibernate" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_main.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_main.iml" group="frameForSpringMvcJpaHibernate" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_test.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_test.iml" group="frameForSpringMvcJpaHibernate" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_test.iml" filepath="$PROJECT_DIR$/.idea/modules/frameForSpringMvcJpaHibernate_test.iml" group="frameForSpringMvcJpaHibernate" />
     </modules>
   </component>

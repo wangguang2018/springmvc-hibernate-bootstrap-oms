@@ -46,15 +46,19 @@ dependencies {
     /*compile("org.springframework:spring-beans:${springVersion}")
     compile("org.springframework:spring-context:${springVersion}")
     compile("org.springframework:spring-expression:${springVersion}")
-    compile("org.springframework:spring-oxm:${springVersion}")
+    compile("org.springframework:spring-oxm:${springVersion}") */
 
-    compile("org.hibernate:hibernate-validator:${hibernateVersion}")*/
 
      //hibernate
+    compile("org.hibernate:hibernate-validator:${hibernateVersion}")
     compile("org.hibernate:hibernate-core:${hibernateVersion}")
     compile("org.hibernate:hibernate-ehcache:${hibernateVersion}")
     compile("org.hibernate:hibernate-entitymanager:${hibernateVersion}")
     compile("org.hibernate:hibernate-c3p0:${hibernateVersion}")
+
+    compile "org.apache.commons:commons-lang3:3.3.2"
+    compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
+    compile "commons-collections:commons-collections:3.2.1"
 
     /*导入Mysql数据库链接jar包*/
     compile("mysql:mysql-connector-java:5.1.9")
