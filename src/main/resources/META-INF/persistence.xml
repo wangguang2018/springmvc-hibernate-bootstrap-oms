@@ -6,7 +6,6 @@
     <persistence-unit name="demo" transaction-type="RESOURCE_LOCAL">
         <!-- provider>org.eclipse.persistence.jpa.PersistenceProvider</provider -->
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <class>com.wangguang.entity.User</class>
         <!-- MYSql 的连接 -->
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />

@@ -20,11 +20,11 @@ import java.util.*;
 
 public class MenuInterceptor implements HandlerInterceptor {
 
-    /*@Resource
-    private MenuService menuService;*/
+    @Resource
+    private MenuService menuService;
 
-   /* @Resource
-    private AccountService accountService;*/
+    @Resource
+    private AccountService accountService;
 
 
     @Override
@@ -40,7 +40,7 @@ public class MenuInterceptor implements HandlerInterceptor {
             HttpSession session = request.getSession(true);
 
             // 查询所有菜单 和 当前访问地址
-            /*String currentAccount = accountService.getCurrentAccount();
+            String currentAccount = accountService.getCurrentAccount();
             List<Menu> menuList;
             List<Menu> rootMenuList;
             List<Menu> childMenuList;
@@ -69,18 +69,8 @@ public class MenuInterceptor implements HandlerInterceptor {
                 session.setAttribute("childMenuId", activeMenuId);
             } else if (session.getAttribute("childMenuId") != null) {
                 activeMenuId = (Integer) session.getAttribute("childMenuId");
-            }*/
-            List<Menu> rootMenuList = Lists.newArrayList();
-            Menu menu = new Menu(1, "系统管理", "", "fa fa-cogs", null);
-            Set<Menu> childMenuList = Sets.newHashSet();
-            childMenuList.add(new Menu(2, "用户管理", "users", "fa fa-cogs", menu));
-            childMenuList.add(new Menu(3, "菜单管理", "menus", "", menu));
-            childMenuList.add(new Menu(4, "角色管理", "roles", "fs", menu));
+            }
 
-            modelAndView.addObject("menus", rootMenuList);
-            modelAndView.addObject("childMenus", childMenuList);
-            /*modelAndView.addObject("activeRootMenuId", activeRootMenuId);
-            modelAndView.addObject("activeMenuId", activeMenuId);*/
 
             /*if (logger.isDebugEnabled()) {
                 logger.debug("activeRootMenuId = " + activeRootMenuId);

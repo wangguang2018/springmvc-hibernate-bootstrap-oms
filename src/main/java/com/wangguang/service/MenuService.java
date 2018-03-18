@@ -98,7 +98,7 @@ public class MenuService extends BaseService<Menu, Integer> {
         // 查询用户信息
         User user = accountService.getUser(uid);
 
-       /* if (CollectionUtils.isNotEmpty(user.getRoleList())) {
+        /*if (CollectionUtils.isNotEmpty(user.getRoleList())) {
             for (Role role : user.getRoleList()) {
                 if (CollectionUtils.isNotEmpty(role.getMenus())) {
                     for (Menu menu : role.getMenus()) {
@@ -237,7 +237,8 @@ public class MenuService extends BaseService<Menu, Integer> {
     }
 
     public List<Menu> getMenuList(int parentMenuId, String roleIds) {
-        String jql = "select m from Menu m left join fetch m.roles r where m.pid=:pid and r.id in (:roleIds) and m.status=:status";
+        String jql = "";
+        //String jql = "select m from Menu m left join fetch m.roles r where m.pid=:pid and r.id in (:roleIds) and m.status=:status";
         TypedQuery<Menu> query = em.createQuery(jql, Menu.class);
         query.setParameter("pid", parentMenuId);
 

@@ -17,11 +17,11 @@ public interface UserRepository extends BaseDao<User, Integer> {
 	/**
 	 * 根据登陆帐号查询用户
 	 *
-	 * @param account 登陆帐号
+	 * @param nickname 登陆帐号
 	 * @return 用户信息
 	 */
-	/*@Query("SELECT a FROM User a WHERE a.account = ?1 AND a.deleted = FALSE")
-	User findByAccount(String account);*/
+	@Query("SELECT u FROM User u WHERE u.nickname = ?1")
+	User getByNickname(String nickname);
 
 	/**
 	 * 根据手机号码查询用户

@@ -357,7 +357,7 @@ public class User implements Serializable {
      *
      * @return 关联的角色
      */
-   /* @ManyToMany(cascade = {CascadeType.REFRESH})
+    /*@ManyToMany(cascade = {CascadeType.REFRESH})
     @JoinTable(name = "sys_user_role", joinColumns = {@JoinColumn(name = "uid")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
     @Fetch(FetchMode.SUBSELECT)
     @NotFound(action = NotFoundAction.IGNORE)

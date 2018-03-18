@@ -2,10 +2,15 @@ package com.wangguang.controller;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import com.wangguang.dao.RoleRepository;
 import com.wangguang.entity.sys.Menu;
+import com.wangguang.entity.sys.Role;
+import com.wangguang.entity.sys.User;
+import com.wangguang.service.AccountService;
 import com.wangguang.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,20 +24,18 @@ public class UserController {
     @Autowired
     MenuService menuService;
 
+    @Autowired
+    AccountService accountService;
+
+    @Autowired
+    RoleRepository roleRepository;
+
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public String list(ModelAndView modelAndView){
-        List<Menu> rootMenuList = Lists.newArrayList();
-        Menu menu = new Menu(1, "系统管理", "", "fa fa-cogs", null);
-        Set<Menu> childMenuList = Sets.newHashSet();
-        childMenuList.add(new Menu(2, "用户管理", "users", "fa fa-cogs", menu));
-        childMenuList.add(new Menu(3, "菜单管理", "menus", "", menu));
-        childMenuList.add(new Menu(4, "角色管理", "roles", "fs", menu));
-        rootMenuList.add(menu);
-        modelAndView.addObject("menus", rootMenuList);
-        modelAndView.addObject("childMenus", childMenuList);
-        modelAndView.addObject("activeRootMenuId", 1);
-        modelAndView.addObject("activeMenuId", 2);
+    public String list(){
+        Menu menu = menuService.findMenu(8);
+        User user = accountService.getUser(1);
+        Role role = roleRepository.findOne(1);
         return "user/list";
     }
 

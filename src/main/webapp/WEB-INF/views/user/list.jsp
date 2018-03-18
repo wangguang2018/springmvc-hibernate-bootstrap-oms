@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: wangyy
@@ -24,6 +25,7 @@
     <c:import url="/WEB-INF/layouts/content_footer.jsp" />
 
 </div>
+---${fn:length(menus)}----
 <c:import url="/WEB-INF/layouts/footer.jsp" />
 </body>
 </html>

@@ -249,7 +249,7 @@ public class AccountService extends BaseService<User, Integer> {
      */
     @Transactional(readOnly = true)
     public User findUserByAccount(String account) {
-        return new User();//userDao.findByAccount(account);
+        return userDao.getByNickname(account);
     }
 
     /**
