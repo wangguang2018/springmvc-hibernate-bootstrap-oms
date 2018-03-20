@@ -39,12 +39,12 @@ public class Role extends IdEntity<Integer> {
     /**
      * 菜单集合
      */
-    private List<Menu> menus;
+//    private List<Menu> menus;
 
     /**
      * 用户集合
      */
-//    private Set<User> users = new HashSet<>();
+    private Set<User> users = new HashSet<>();
 
     /**
      * 权限点
@@ -131,44 +131,44 @@ public class Role extends IdEntity<Integer> {
      *
      * @return 菜单集合
      */
-    @ManyToMany
+    /*@ManyToMany
     @JoinTable(name = "sys_role_menu", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "menu_id", referencedColumnName = "id")})
     @Fetch(value = FetchMode.SUBSELECT)
     @JsonIgnore
     public List<Menu> getMenus() {
         return menus;
-    }
+    }*/
 
     /**
      * 设置菜单集合
      *
      * @param menus 菜单集合
      */
-    public void setMenus(List<Menu> menus) {
+   /* public void setMenus(List<Menu> menus) {
         this.menus = menus;
-    }
+    }*/
 
     /**
      * 获取包含此角色的用户
      *
      * @return 包含此角色的用户
      */
-    /*@ManyToMany
+    @ManyToMany
     @JoinTable(name = "sys_user_role", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "uid", referencedColumnName = "uid")})
     @Fetch(value = FetchMode.SUBSELECT)
     @JsonIgnore
     public Set<User> getUsers() {
         return users;
-    }*/
+    }
 
     /**
      * 设置包含此角色的用户
      *
      * @param users 包含此角色的用户
      */
-   /* public void setUsers(Set<User> users) {
+    public void setUsers(Set<User> users) {
         this.users = users;
-    }*/
+    }
 
     /**
      * 获取角色关联的权限点
@@ -192,7 +192,7 @@ public class Role extends IdEntity<Integer> {
         this.permissions = permissions;
     }*/
 
-    @Transient
+    /*@Transient
     public String getMenuIds() {
         String menuIds = "";
         for (Menu menu : menus) {
@@ -203,7 +203,7 @@ public class Role extends IdEntity<Integer> {
         } else {
             return "";
         }
-    }
+    }*/
 
     /**
      * 获取角色的权限点
@@ -225,7 +225,7 @@ public class Role extends IdEntity<Integer> {
      * @param menuId 菜单编号
      * @return 包含返回true，反之false
      */
-    @Transient
+    /*@Transient
     public boolean hasMenuChecked(Integer menuId) {
         if (menuId != null && menuId > 0 && CollectionUtils.isNotEmpty(menus)) {
             for (Menu menu : menus) {
@@ -235,7 +235,7 @@ public class Role extends IdEntity<Integer> {
             }
         }
         return false;
-    }
+    }*/
 
     /**
      * 判断当前角色是否包含选中的权限点

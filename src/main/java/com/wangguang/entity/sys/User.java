@@ -90,7 +90,7 @@ public class User implements Serializable {
     /**
      * 角色
      */
-//    private List<Role> roleList = new ArrayList<>(); // 有序的关联对象集合
+    private List<Role> roleList = new ArrayList<>(); // 有序的关联对象集合
 
     /**
      * 实例化一个用户
@@ -357,23 +357,23 @@ public class User implements Serializable {
      *
      * @return 关联的角色
      */
-    /*@ManyToMany(cascade = {CascadeType.REFRESH})
+    @ManyToMany(cascade = {CascadeType.REFRESH})
     @JoinTable(name = "sys_user_role", joinColumns = {@JoinColumn(name = "uid")}, inverseJoinColumns = {@JoinColumn(name = "role_id")})
     @Fetch(FetchMode.SUBSELECT)
     @NotFound(action = NotFoundAction.IGNORE)
     @OrderBy("id ASC")
     public List<Role> getRoleList() {
         return roleList;
-    }*/
+    }
 
     /**
      * 设置用户关联的角色
      *
      * @param roleList 关联的角色
      */
-    /*public void setRoleList(List<Role> roleList) {
+    public void setRoleList(List<Role> roleList) {
         this.roleList = roleList;
-    }*/
+    }
 
     /**
      * 判断当前用户是否包含选中的角色

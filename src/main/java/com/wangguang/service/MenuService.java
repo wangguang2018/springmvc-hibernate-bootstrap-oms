@@ -97,8 +97,8 @@ public class MenuService extends BaseService<Menu, Integer> {
 
         // 查询用户信息
         User user = accountService.getUser(uid);
-
-        /*if (CollectionUtils.isNotEmpty(user.getRoleList())) {
+        List<Role> roles = user.getRoleList();
+       /* if (CollectionUtils.isNotEmpty(roles)) {
             for (Role role : user.getRoleList()) {
                 if (CollectionUtils.isNotEmpty(role.getMenus())) {
                     for (Menu menu : role.getMenus()) {
@@ -185,9 +185,9 @@ public class MenuService extends BaseService<Menu, Integer> {
                 throw new WebRequestException("《" + menu.getName() + "》菜单存在子菜单，请先删除子菜单");
             }
 
-            if (CollectionUtils.isNotEmpty(menu.getRoles())) {
+            /*if (CollectionUtils.isNotEmpty(menu.getRoles())) {
                 throw new WebRequestException("《" + menu.getName() + "》菜单已经被角色关联，请先取消关联");
-            }
+            }*/
 
             menuDao.delete(menu);
         }

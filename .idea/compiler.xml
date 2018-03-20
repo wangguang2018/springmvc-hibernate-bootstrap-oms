@@ -4,8 +4,6 @@
     <bytecodeTargetLevel>
       <module name="frameForSpringMvcJpaHibernate_main" target="1.8" />
       <module name="frameForSpringMvcJpaHibernate_test" target="1.8" />
-      <module name="springMvcDemo_main" target="1.8" />
-      <module name="springMvcDemo_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
