@@ -31,6 +31,12 @@
 	</mvc:interceptors>
 
 	<mvc:interceptors>
+		<bean class="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor">
+			<property name="sessionFactory" ref="sessionFactory"/>
+		</bean>
+	</mvc:interceptors>
+
+	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/*"/>
 			<mvc:mapping path="/*/*" />

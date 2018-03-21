@@ -8,3 +8,9 @@
 out
 gen
 /build/
+/.gradle/
+/.idea/
+/gradle/
+/logs/
+/out/
+/.gitignore
