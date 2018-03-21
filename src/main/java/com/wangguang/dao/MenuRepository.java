@@ -36,7 +36,7 @@ public interface MenuRepository extends BaseDao<Menu, Integer> {
 	@Query()
 	List<Menu> findByParentMenu(Menu parentMenu, Sort sort);
 
-	@Query(value = "select m.* from sys_menu m,sys_role r,sys_role_menu rm where m.id=rm.menu_id and r.id=rm.role_id and m.pid=:pid and r.id in (:roleIds) and m.status=:status", nativeQuery = true)
+	/*@Query(value = "select m.* from sys_menu m,sys_role r,sys_role_menu rm where m.id=rm.menu_id and r.id=rm.role_id and m.pid=:pid and r.id in (:roleIds) and m.status=:status", nativeQuery = true)
 	public List<Menu> findByUserRoles(@Param("pid") int pid, @Param("roleIds") String roleIds,
                                       @Param("status") int status);
 
@@ -50,6 +50,6 @@ public interface MenuRepository extends BaseDao<Menu, Integer> {
 
 	@Modifying
 	@Query(value = "delete Menu where id = ?1 ")
-	public void deleteById(int id);
+	public void deleteById(int id);*/
 
 }

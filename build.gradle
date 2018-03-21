@@ -2,8 +2,8 @@ group 'com.wangguang'
 version '1.0-SNAPSHOT'
 
 ext {
-    hibernateVersion = "3.6.10.Final"
-    springVersion = "3.2.11.RELEASE"
+    hibernateVersion = "4.3.10.Final"
+    springVersion = "4.0.5.RELEASE"
 
 }
 
