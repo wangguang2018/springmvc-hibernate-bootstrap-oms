@@ -2,8 +2,10 @@ group 'com.wangguang'
 version '1.0-SNAPSHOT'
 
 ext {
-    hibernateVersion = "4.3.10.Final"
-    springVersion = "4.0.5.RELEASE"
+    hibernateVersion = "3.6.10.Final"
+    springVersion = "3.2.11.RELEASE"
+    slf4jVersion = "1.7.6"
+    tomcatjdbcVersion = "7.0.54"
 
 }
 
@@ -50,6 +52,8 @@ dependencies {
     compile "com.fasterxml.jackson.core:jackson-databind:2.4.3"
     compile "com.fasterxml.jackson.core:jackson-annotations:2.4.3"
 
+    compile("org.apache.tomcat:tomcat-jdbc:${tomcatjdbcVersion}")
+
 
 
     /*compile("org.springframework:spring-beans:${springVersion}")
@@ -59,11 +63,11 @@ dependencies {
 
 
      //hibernate
-    compile("org.hibernate:hibernate-validator:4.3.2.Final")
+    compile("org.hibernate:hibernate-validator:5.2.1.Final")
     compile("org.hibernate:hibernate-core:${hibernateVersion}")
     compile("org.hibernate:hibernate-ehcache:${hibernateVersion}")
     compile("org.hibernate:hibernate-entitymanager:${hibernateVersion}")
-    compile("org.hibernate:hibernate-c3p0:${hibernateVersion}")
+    /*compile("org.hibernate:hibernate-c3p0:${hibernateVersion}")*/
 
     compile "org.apache.commons:commons-lang3:3.3.2"
     compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
@@ -71,6 +75,8 @@ dependencies {
 
     /*导入Mysql数据库链接jar包*/
     compile("mysql:mysql-connector-java:5.1.9")
+
+    compile "org.slf4j:slf4j-api:${slf4jVersion}"
 
 
 
