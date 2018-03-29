@@ -45,7 +45,7 @@ public class Menu implements Serializable {
 	private String url;
 
 	/** 菜单关联的角色 */
-//	private Set<Role> roles = new HashSet<Role>();
+	private Set<Role> roles = new HashSet<Role>();
 
 	/** 父菜单 */
 	private Menu parentMenu;
@@ -249,20 +249,20 @@ public class Menu implements Serializable {
 	 *
 	 * @return 菜单关联的角色
 	 */
-	/*@ManyToMany(mappedBy = "menus")
+	@ManyToMany(mappedBy = "menus")
 	@JsonIgnore
 	public Set<Role> getRoles() {
 		return roles;
-	}*/
+	}
 
 	/**
 	 * 设置菜单关联的角色
 	 *
 	 * @param roles 菜单关联的角色
 	 */
-	/*public void setRoles(Set<Role> roles) {
+	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
-	}*/
+	}
 
 	/**
 	 * 获取子菜单

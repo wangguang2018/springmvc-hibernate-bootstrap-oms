@@ -98,7 +98,7 @@ public class MenuService extends BaseService<Menu, Integer> {
         // 查询用户信息
         User user = accountService.getUser(uid);
         List<Role> roles = user.getRoleList();
-       /* if (CollectionUtils.isNotEmpty(roles)) {
+        if (CollectionUtils.isNotEmpty(roles)) {
             for (Role role : user.getRoleList()) {
                 if (CollectionUtils.isNotEmpty(role.getMenus())) {
                     for (Menu menu : role.getMenus()) {
@@ -109,7 +109,7 @@ public class MenuService extends BaseService<Menu, Integer> {
                 }
 
             }
-        }*/
+        }
 
         return menuList;
     }

@@ -30,8 +30,6 @@
 		<bean class="com.wangguang.interceptor.ControllerInterceptor"></bean>
 	</mvc:interceptors>
 
-
-
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/*"/>

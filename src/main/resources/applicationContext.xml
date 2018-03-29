@@ -16,6 +16,7 @@
          http://www.springframework.org/schema/data/jpa
          http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
     <!-- 开启IOC注解扫描 -->
+    <context:annotation-config />
     <context:component-scan base-package="com.wangguang" />
     <!--<bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -54,8 +55,6 @@
     </bean>
 
 
-
-
     <!-- 开启MVC注解扫描 -->
     <mvc:annotation-driven />
 
@@ -70,7 +69,8 @@
     </bean>
 
     <!-- 启用 annotation事务 -->
-    <tx:annotation-driven transaction-manager="transactionManager" />
+    <tx:annotation-driven transaction-manager="transactionManager"
+                          proxy-target-class="true" />
 
     <bean id="hibernateJpaVendorAdapter"
           class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
@@ -78,7 +78,11 @@
     </bean>
 
     <!-- 配置Spring Data JPA扫描目录 -->
-    <jpa:repositories base-package="com.wangguang.dao" />
+    <!--<jpa:repositories base-package="com.wangguang.dao" />-->
+
+    <jpa:repositories base-package="com.wangguang.dao"
+                      transaction-manager-ref="transactionManager"
+                      entity-manager-factory-ref="entityManagerFactory" />
 
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
           destroy-method="close">

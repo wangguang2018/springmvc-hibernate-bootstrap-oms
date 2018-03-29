@@ -35,6 +35,7 @@ public class UserController {
     public String list(){
         Menu menu = menuService.findMenu(8);
         User user = accountService.getUser(1);
+        List<Role> roles = user.getRoleList();
         Role role = roleRepository.findOne(1);
         return "user/list";
     }

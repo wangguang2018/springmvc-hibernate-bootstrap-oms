@@ -39,7 +39,7 @@ public class Role extends IdEntity<Integer> {
     /**
      * 菜单集合
      */
-//    private List<Menu> menus;
+    private List<Menu> menus;
 
     /**
      * 用户集合
@@ -131,22 +131,22 @@ public class Role extends IdEntity<Integer> {
      *
      * @return 菜单集合
      */
-    /*@ManyToMany
+    @ManyToMany
     @JoinTable(name = "sys_role_menu", joinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}, inverseJoinColumns = {@JoinColumn(name = "menu_id", referencedColumnName = "id")})
     @Fetch(value = FetchMode.SUBSELECT)
     @JsonIgnore
     public List<Menu> getMenus() {
         return menus;
-    }*/
+    }
 
     /**
      * 设置菜单集合
      *
      * @param menus 菜单集合
      */
-   /* public void setMenus(List<Menu> menus) {
+    public void setMenus(List<Menu> menus) {
         this.menus = menus;
-    }*/
+    }
 
     /**
      * 获取包含此角色的用户
