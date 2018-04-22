@@ -1,0 +1,12 @@
+//核心包工程
+project(':modules:model') {
+    dependencies {
+        compile project(':dm-dto')
+
+        compile("org.hibernate:hibernate-core:${hibernateVersion}")
+        compile("org.hibernate:hibernate-entitymanager:${hibernateVersion}")
+        compile("org.hibernate:hibernate-validator:4.3.2.Final")
+        compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:${hibernateJpaVersion}"
+        compile "com.google.guava:guava:18.0"
+    }
+}

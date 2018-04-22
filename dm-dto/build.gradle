@@ -1,0 +1,48 @@
+group 'com.wangguang'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+
+
+
+repositories {
+    maven {url 'http://maven.ydd100.cn/repository/maven-public/'}
+    mavenCentral()
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+/*uploadArchives {
+    repositories {
+        MavenDeployer {
+            repository(url: 'http://maven.ydd100.cn/repository/maven-releases/') {
+                authentication(userName: 'developer', password: 'developer')
+            }
+            pom.version = "$project.version"
+            pom.artifactId = "dm-dto"
+            pom.groupId = "$project.group"
+        }
+    }
+}*/
+
+dependencies {
+
+
+    compile "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    compile "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

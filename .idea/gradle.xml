@@ -10,6 +10,43 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/dm-dto" />
+            <option value="$PROJECT_DIR$/frame-oms" />
+            <option value="$PROJECT_DIR$/modules" />
+            <option value="$PROJECT_DIR$/modules/model" />
+            <option value="$PROJECT_DIR$/modules/service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/modules/model" />
+        <option name="gradleHome" value="D:/Program Files/gradle-3.5-all/gradle-3.5" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/dm-dto" />
+            <option value="$PROJECT_DIR$/frame-oms" />
+            <option value="$PROJECT_DIR$/modules" />
+            <option value="$PROJECT_DIR$/modules/model" />
+            <option value="$PROJECT_DIR$/modules/service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/modules/service" />
+        <option name="gradleHome" value="D:/Program Files/gradle-3.5-all/gradle-3.5" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/dm-dto" />
+            <option value="$PROJECT_DIR$/frame-oms" />
+            <option value="$PROJECT_DIR$/modules" />
+            <option value="$PROJECT_DIR$/modules/model" />
+            <option value="$PROJECT_DIR$/modules/service" />
           </set>
         </option>
       </GradleProjectSettings>

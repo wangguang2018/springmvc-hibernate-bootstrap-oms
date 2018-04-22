@@ -2,8 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="dm-dto_main" target="1.8" />
+      <module name="dm-dto_test" target="1.8" />
+      <module name="frame-oms_main" target="1.8" />
+      <module name="frame-oms_test" target="1.8" />
       <module name="frameForSpringMvcJpaHibernate_main" target="1.8" />
       <module name="frameForSpringMvcJpaHibernate_test" target="1.8" />
+      <module name="model_main" target="1.8" />
+      <module name="model_test" target="1.8" />
+      <module name="modules_main" target="1.8" />
+      <module name="modules_test" target="1.8" />
+      <module name="service_main" target="1.8" />
+      <module name="service_test" target="1.8" />
+      <module name="springmvc-hibernate-bootstrap-oms-dm-dto_main" target="1.8" />
+      <module name="springmvc-hibernate-bootstrap-oms-dm-dto_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
