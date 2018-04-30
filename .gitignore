@@ -14,3 +14,5 @@ gen
 /logs/
 /out/
 /.gitignore
+/frame-oms/build/
+/frame-oms/out/

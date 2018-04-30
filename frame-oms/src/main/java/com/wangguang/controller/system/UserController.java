@@ -39,7 +39,7 @@ public class UserController extends WebController {
     public String list(Pagination pagination, Model model) {
         model.addAttribute("pagination", pagination);
         return "user/list";
-    }
+        }
 
     /**
      * 系统用户列表数据
@@ -49,6 +49,10 @@ public class UserController extends WebController {
         Map<String, Object> searchParams = Servlets.getParametersStartingWith(request, "search_");
         searchParams.put("EQ_deleted", false);
         model.addAttribute("page", accountService.list(pagination, searchParams));
+        int a = 1;
+        if(a>2){
+            throw new RuntimeException();
+        }
         return "user/nested";
     }
 
