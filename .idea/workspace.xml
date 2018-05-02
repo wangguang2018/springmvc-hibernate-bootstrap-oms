@@ -7,25 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fd8c15d-e4d9-4208-a302-59c92af44abe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dm-dto/build/libs/dm-dto-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/model/build/libs/model.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/service/build/libs/service.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dm-dto/build/tmp/jar/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/model/build/tmp/jar/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/service/build/tmp/jar/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame-oms/build.gradle" afterPath="$PROJECT_DIR$/frame-oms/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java" afterPath="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java" afterPath="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame-oms/src/main/resources/sys.properties" afterPath="$PROJECT_DIR$/frame-oms/src/main/resources/sys.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" afterPath="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" afterPath="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -126,31 +109,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="198">
+              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/model/build.gradle">
+      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="220">
+              <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrudRepository.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.9.0.RELEASE/63820e1f6f5735440f994e0ced4e6fa0a5a70074/spring-data-commons-1.9.0.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/sys/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="242">
+              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/dao/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#UserRepository#0" expanded="false" />
+                <element signature="docComment;method#findByAccount#0;class#UserRepository#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame-oms/out/production/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,9 +207,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rootMenus</find>
-      <find>hasRoleChecked</find>
-      <find>hibernateJpa</find>
       <find>com.</find>
       <find>version</find>
       <find>jacksonVersion</find>
@@ -190,6 +234,9 @@
       <find>springDataMongodbVersion</find>
       <find>springredisVersion</find>
       <find>springjpaVersion</find>
+      <find>dataSo</find>
+      <find>dataSource</find>
+      <find>packagesToScan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1544,14 +1591,14 @@
         <option value="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/BaseService.java" />
         <option value="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/MenuService.java" />
         <option value="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/RoleService.java" />
-        <option value="$PROJECT_DIR$/frame-oms/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" />
         <option value="$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java" />
         <option value="$PROJECT_DIR$/frame-oms/build.gradle" />
         <option value="$PROJECT_DIR$/frame-oms/src/main/resources/sys.properties" />
         <option value="$PROJECT_DIR$/modules/model/build.gradle" />
+        <option value="$PROJECT_DIR$/frame-oms/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java" />
       </list>
     </option>
   </component>
@@ -1569,10 +1616,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="765" />
-    <option name="y" value="111" />
-    <option name="width" value="1596" />
-    <option name="height" value="848" />
+    <option name="x" value="234" />
+    <option name="y" value="153" />
+    <option name="width" value="1552" />
+    <option name="height" value="799" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1590,88 +1637,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc-hibernate-bootstrap-oms" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="frame-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="frame-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="frame-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="frame-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc-hibernate-bootstrap-oms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="modules" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="model" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.springframework.data:spring-data-commons:1.9.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.springframework.data:spring-data-commons:1.9.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-1.9.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.springframework.data:spring-data-commons:1.9.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-1.9.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frameForSpringMvcJpaHibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.springframework.data:spring-data-commons:1.9.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-1.9.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1682,19 +1662,19 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15324676" />
     <property name="project.structure.side.proportion" value="0.39066666" />
-    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/BaseDao.java&#10;user&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java&#10;build.gradle&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/build.gradle&#10;bases&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/common/BaseService.java&#10;roles&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/service/RoleService.java&#10;com&#9;PSI&#9;JAVA://com.wangguang.common.CommonService&#10;menudao&#9;PSI&#9;JAVA://com.wangguang.service.MenuService#menuDao&#10;param&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/repositories/base/SystemParamDao.java&#10;spring-mv&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/spring-mvc.xml&#10;based&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/BaseDao.java&#10;BaseDao&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/common/BaseDao.java&#10;build.&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/service/build.gradle&#10;build&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/service/build.gradle&#10;role&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/entity/sys/Role.java&#10;rolese&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/service/RoleService.java&#10;userc&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java&#10;list.js&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/static/js/menu/list.js&#10;edit.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/views/role/edit.jsp&#10;rolere&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/dao/RoleRepository.java&#10;rolec&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/RoleController.java&#10;menu&#9;PSI&#9;JAVA://com.wangguang.entity.sys.Menu&#10;menur&#9;PSI&#9;JAVA://com.wangguang.dao.MenuRepository&#10;menus&#9;PSI&#9;JAVA://com.wangguang.service.MenuService&#10;menuc&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/MenuController.java&#10;foot&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;pag&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/static/js/common/pagination.js&#10;list.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/views/menu/list.jsp&#10;json&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/web/JsonMap.java&#10;consta&#9;PSI&#9;JAVA://com.wangguang.common.bo.Constant&#10;webc&#9;PSI&#9;JAVA://com.wangguang.controller.common.WebController&#10;se&#9;PSI&#9;JAVA://com.wangguang.web.Servlets&#10;system&#9;FILE&#9;maven-properties://System.properties&#10;nav.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;header.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/layouts/header.jsp&#10;user.j&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;web.xml&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/web.xml&#10;app&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/resources/applicationContext.xml&#10;web&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/web.xml&#10;spring&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/spring-mvc.xml&#10;user.java&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;a&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/resources/applicationContext.xml&#10;demo&#9;null&#9;null&#10;build.g&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/build.gradle&#10;edit.js&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/pages/user/edit.jsp&#10;bu&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/build.gradle&#10;USER&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;spring-mvc&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/spring-mvc.xml&#10;spring-mve&#9;null&#9;null&#10;menui&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/interceptor/MenuInterceptor.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/BaseDao.java&#10;userc&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java&#10;userr&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/dao/UserRepository.java&#10;app&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/frame-oms/out/production/resources/applicationContext.xml&#10;acc&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/service/AccountService.java&#10;base&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/BaseDao.java&#10;user&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java&#10;build.gradle&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/build.gradle&#10;bases&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/common/BaseService.java&#10;roles&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/service/RoleService.java&#10;com&#9;PSI&#9;JAVA://com.wangguang.common.CommonService&#10;menudao&#9;PSI&#9;JAVA://com.wangguang.service.MenuService#menuDao&#10;param&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/repositories/base/SystemParamDao.java&#10;spring-mv&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/spring-mvc.xml&#10;based&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/model/src/main/java/com/wangguang/model/BaseDao.java&#10;BaseDao&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/common/BaseDao.java&#10;build.&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/service/build.gradle&#10;build&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/modules/service/build.gradle&#10;role&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/entity/sys/Role.java&#10;rolese&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/service/RoleService.java&#10;list.js&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/static/js/menu/list.js&#10;edit.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/views/role/edit.jsp&#10;rolere&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/dao/RoleRepository.java&#10;rolec&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/RoleController.java&#10;menu&#9;PSI&#9;JAVA://com.wangguang.entity.sys.Menu&#10;menur&#9;PSI&#9;JAVA://com.wangguang.dao.MenuRepository&#10;menus&#9;PSI&#9;JAVA://com.wangguang.service.MenuService&#10;menuc&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/controller/system/MenuController.java&#10;foot&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/layouts/footer.jsp&#10;pag&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/static/js/common/pagination.js&#10;list.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/webapp/WEB-INF/views/menu/list.jsp&#10;json&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/frame-oms/src/main/java/com/wangguang/web/JsonMap.java&#10;consta&#9;PSI&#9;JAVA://com.wangguang.common.bo.Constant&#10;webc&#9;PSI&#9;JAVA://com.wangguang.controller.common.WebController&#10;se&#9;PSI&#9;JAVA://com.wangguang.web.Servlets&#10;system&#9;FILE&#9;maven-properties://System.properties&#10;nav.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/layouts/nav.jsp&#10;header.jsp&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/layouts/header.jsp&#10;user.j&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;web.xml&#9;FILE&#9;file://D:/workproject/git/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/web.xml&#10;web&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/web.xml&#10;spring&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/spring-mvc.xml&#10;user.java&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;a&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/resources/applicationContext.xml&#10;demo&#9;null&#9;null&#10;build.g&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/build.gradle&#10;edit.js&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/pages/user/edit.jsp&#10;bu&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/build.gradle&#10;USER&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/java/com/wangguang/entity/sys/User.java&#10;spring-mvc&#9;FILE&#9;file://D:/git-wangguang/springmvc-hibernate-bootstrap-oms/src/main/webapp/WEB-INF/spring-mvc.xml" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wangguang.service" />
       <recent name="com.wangguang.services" />
       <recent name="com.wangguang.model" />
       <recent name="com.wangguang.entity.sys" />
       <recent name="com.wangguang.model.repositories.base" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workproject\git\springmvc-hibernate-bootstrap-oms\frame-oms\src\main\resources" />
@@ -1717,7 +1697,171 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="model [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/modules/model" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:frame-oms [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frame-oms" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:frame-oms [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frame-oms" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:modules [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/modules" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:modules [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/modules" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.48" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1790,170 +1934,11 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="model [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/modules/model" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:frame-oms [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/frame-oms" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:frame-oms [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/frame-oms" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:modules [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/modules" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="model::workproject:git:springmvc-hibernate-bootstrap-oms:modules [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/modules" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
@@ -2022,10 +2007,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115397000" />
+    <option name="totallyTimeSpent" value="117113000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2033,7 +2019,43 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3888889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4311111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51222223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38444445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34640172" sideWeight="0.7349769" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22777778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2044,26 +2066,19 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45251396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16536313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190118" sideWeight="0.2650231" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28072917" sideWeight="0.7349769" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22777778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190118" sideWeight="0.2650231" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22777778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2243,7 +2258,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/repositories/member/MemberTokenDao.java" />
     <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/repositories/ChargeOptionDao.java" />
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/entity/sys/Param.java" />
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/entity/sys/Role.java" />
@@ -2305,8 +2319,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1525251196656" expanded="true" signature="1145:1184" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2322,8 +2340,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/interceptor/MenuInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="-405">
+          <caret line="69" column="69" lean-forward="false" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2391,15 +2412,17 @@
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/common/BaseService.java" />
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/MenuService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state relative-caret-position="110">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2409,13 +2432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/dao/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -2435,8 +2451,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/sys/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2454,24 +2471,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="220">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2490,13 +2494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame-oms/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2504,28 +2501,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame-oms/out/production/resources/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/frame-oms/out/production/resources/sys.properties" />
     <entry file="file://$PROJECT_DIR$/frame-oms/src/main/resources/sys.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2541,6 +2521,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/entity/ChargeOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/out/production/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/dao/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#UserRepository#0" expanded="false" />
+            <element signature="docComment;method#findByAccount#0;class#UserRepository#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame-oms/src/main/java/com/wangguang/controller/system/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/model/src/main/java/com/wangguang/model/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
