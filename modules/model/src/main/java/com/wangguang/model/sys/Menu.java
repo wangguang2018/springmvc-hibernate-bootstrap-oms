@@ -54,7 +54,7 @@ public class Menu implements Serializable {
 	private Set<Menu> childMenu = new HashSet<Menu>();
 
 	/** 权限点 */
-	/*private Set<Permission> permissions = new HashSet<>();*/
+	private Set<Permission> permissions = new HashSet<>();
 
 	/** 创建时间 */
 	private Date createTime;
@@ -311,7 +311,7 @@ public class Menu implements Serializable {
 	 *
 	 * @return 权限点
 	 */
-	/*@JsonIgnore
+	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
 	public Set<Permission> getPermissions() {
 		return permissions;
@@ -319,5 +319,5 @@ public class Menu implements Serializable {
 
 	public void setPermissions(Set<Permission> permissions) {
 		this.permissions = permissions;
-	}*/
+	}
 }
