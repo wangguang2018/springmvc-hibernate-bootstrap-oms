@@ -51,7 +51,13 @@
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter" />
-        <property name="packagesToScan" value="com.wangguang.model" />
+        <!--<property name="packagesToScan" value="com.wangguang.model" />-->
+        <property name="packagesToScan">
+            <list>
+                <value>com.wangguang.model</value>
+                <value>com.wangguang.entity</value>
+            </list>
+        </property>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</prop>

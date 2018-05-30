@@ -16,3 +16,8 @@ gen
 /.gitignore
 /frame-oms/build/
 /frame-oms/out/
+/dm-dto/build/
+/modules/model/build/
+/modules/model/.gradle/
+/modules/service/.gradle/
+/modules/service/build/

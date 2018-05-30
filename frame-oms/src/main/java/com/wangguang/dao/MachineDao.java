@@ -22,8 +22,8 @@ public interface MachineDao extends BaseDao<Machine,Integer> {
     @Query("select m from Machine m where m.id in ?1")
     List<Machine> findByIds(Integer[] ids);
 
-    @Query("select m from Machine m  left join m.agent  where m.flag = 1")
-    List<Machine> getAll();
+    /*@Query("select m from Machine m  left join m.agent  where m.flag = 1")
+    List<Machine> getAll();*/
 
     @Query("select m from Machine m where m.flag = 1 and m.agentId = ?1")
     List<Machine> findAllByAgentId(Integer agentId);
@@ -32,14 +32,14 @@ public interface MachineDao extends BaseDao<Machine,Integer> {
     @Query("select m from Machine m where m.flag = 1 and m.mark = ?1")
     Machine getByMark(String mark);
 
-    @Query("select m from Machine m where m.flag = 1 and m.agentId = ?1 and m.productId!=null")
+    @Query("select m from Machine m where m.flag = 1 and m.agentId = ?1 and m.productId=1")
     Page<Machine> findAllPage(Integer agentId, Pageable pageable);
 
-    @Query("select m from  TagMachine tm join tm.machine m  where m.flag = 1 and tm.tagId=?1 and m.productId!=null  order by m.online desc, m.fixStatus asc, m.sort desc")
-    Page<Machine> findByTagId(Integer type, Pageable pageable);
+   /* @Query("select m from  TagMachine tm join tm.machine m  where m.flag = 1 and tm.tagId=?1 and m.productId=1  order by m.online desc, m.fixStatus asc, m.sort desc")
+    Page<Machine> findByTagId(Integer type, Pageable pageable);*/
 
 
-    @Query("select m from Machine m where m.flag = 1  and m.agentId = ?1 and m.productId!=null")
+    @Query("select m from Machine m where m.flag = 1  and m.agentId = ?1 and m.productId=1")
     Page<Machine> findHomeRoom(Integer agentId, Pageable pageable);
 
     @Query("select count(m) from Machine m where m.flag = 1 and m.agentId = ?1")
