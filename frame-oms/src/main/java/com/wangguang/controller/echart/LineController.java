@@ -59,7 +59,7 @@ public class LineController extends WebController {
         model.addAttribute("searchTypes", EnumStatisticsSearchType.values());
         model.addAttribute("pagination", pagination);
 
-        return "main";
+        return "echart/line/main";
     }
 
 
