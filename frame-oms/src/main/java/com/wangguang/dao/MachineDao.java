@@ -32,15 +32,15 @@ public interface MachineDao extends BaseDao<Machine,Integer> {
     @Query("select m from Machine m where m.flag = 1 and m.mark = ?1")
     Machine getByMark(String mark);
 
-    @Query("select m from Machine m where m.flag = 1 and m.agentId = ?1 and m.productId=1")
-    Page<Machine> findAllPage(Integer agentId, Pageable pageable);
+    @Query("select m from Machine m where m.flag = 1 and m.agentId = ?1 and m.productId!=null")
+    Page<Machine> findAllPage(Integer agentId,Pageable pageable);
 
-   /* @Query("select m from  TagMachine tm join tm.machine m  where m.flag = 1 and tm.tagId=?1 and m.productId=1  order by m.online desc, m.fixStatus asc, m.sort desc")
+   /* @Query("select m from  TagMachine tm join tm.machine m  where m.flag = 1 and tm.tagId=?1 and m.productId!=null  order by m.online desc, m.fixStatus asc, m.sort desc")
     Page<Machine> findByTagId(Integer type, Pageable pageable);*/
 
 
-    @Query("select m from Machine m where m.flag = 1  and m.agentId = ?1 and m.productId=1")
-    Page<Machine> findHomeRoom(Integer agentId, Pageable pageable);
+    @Query("select m from Machine m where m.flag = 1  and m.agentId = ?1 and m.productId!=null")
+    Page<Machine> findHomeRoom(Integer agentId,Pageable pageable);
 
     @Query("select count(m) from Machine m where m.flag = 1 and m.agentId = ?1")
     Long countMachine(Integer agentId);
@@ -50,17 +50,17 @@ public interface MachineDao extends BaseDao<Machine,Integer> {
 
     @Modifying
     @Query(value = "update Machine m set m.sort = :sort where m.id = :id ")
-    public void updateSort(@Param("id") int id, @Param("sort") int sort);
+    public void updateSort(@Param("id") int id,@Param("sort") int sort);
 
 
     @Modifying
     @Query(value = "update Machine m set m.mark = :mark where m.id = :id ")
-    public void updateMark(@Param("id") int id, @Param("mark") String mark);
+    public void updateMark(@Param("id") int id,@Param("mark") String mark);
 
 
     @Modifying
     @Query(value = "update Machine m set m.flag = :flag where m.id = :id ")
-    public void updateFlag(@Param("id") int id, @Param("flag") byte flag);
+    public void updateFlag(@Param("id") int id,@Param("flag") byte flag);
 
     @Modifying
     @Query(value = "update Machine m set m.fixStatus = :val where m.id in :ids ")
