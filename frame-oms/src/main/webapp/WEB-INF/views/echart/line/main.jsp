@@ -94,7 +94,7 @@
 
               
             <div class="catch-part" style="margin-top: 255px;">
-                <form   id="catchForm" class=""  method="POST" action="${ctx}/echart/line/main">
+                <form   id="catchForm" class=""  method="POST" action="${ctx}/echart/line">
                   <div class="search-group form-inline">
                     <select name="agentId" class="form-control">
                         <c:forEach items="${agents}" var="agent">

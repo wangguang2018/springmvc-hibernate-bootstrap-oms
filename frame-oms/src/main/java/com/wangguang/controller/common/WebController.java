@@ -5,17 +5,21 @@ import com.wangguang.model.enums.EnumAdminType;
 import com.wangguang.model.sys.Role;
 import com.wangguang.model.sys.User;
 import com.wangguang.service.AgentService;
+import com.wangguang.web.DateEditor;
 import com.wangguang.web.JsonMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
+import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,6 +87,9 @@ public abstract class WebController {
 
     public boolean isAgent(){
         User user =  getLoginUser();
+        if(user==null){
+            return false;
+        }
         List<Role> roles = user.getRoleList();
         for(Role role : roles){
             if(role.getId().intValue() != EnumAdminType.ADMIN.value){
@@ -95,6 +102,12 @@ public abstract class WebController {
     public Agent getLoginAgent(){
         User user =  getLoginUser();
         return agentService.findByAdminId(user.getId());
+    }
+
+    @InitBinder
+    protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) throws Exception {
+        //对于需要转换为Date类型的属性，使用DateEditor进行处理
+        binder.registerCustomEditor(Date.class, new DateEditor());
     }
 
 

@@ -8,3 +8,4 @@
   To change this template use File | Settings | File Templates.
 --%>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>

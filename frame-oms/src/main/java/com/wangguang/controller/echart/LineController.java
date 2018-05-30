@@ -1,13 +1,21 @@
 package com.wangguang.controller.echart;
 
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.wangguang.common.vo.Pagination;
 import com.wangguang.controller.common.WebController;
 import com.wangguang.dao.AgentDao;
+import com.wangguang.dto.StatisticDto;
+import com.wangguang.entity.Agent;
 import com.wangguang.model.enums.EnumStatisticsSearchType;
 import com.wangguang.model.sys.User;
+import com.wangguang.service.AgentService;
 import com.wangguang.service.DollLogService;
 import com.wangguang.service.StatisticsService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +24,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/echart/line")
@@ -28,14 +39,15 @@ public class LineController extends WebController {
     private DollLogService dollLogService;
 
 
-   /* @Resource
+    @Resource
     private AgentService agentService;
 
-    @Resource
+    /*@Resource
     private RedisService redisService;*/
 
     @Resource
     private AgentDao agentDao;
+
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(Pagination pagination,Model model) {
@@ -58,7 +70,6 @@ public class LineController extends WebController {
         model.addAttribute("yearCharge",statisticsService.yearCharge(agentId));
         model.addAttribute("searchTypes", EnumStatisticsSearchType.values());
         model.addAttribute("pagination", pagination);
-
         return "echart/line/main";
     }
 
@@ -76,7 +87,7 @@ public class LineController extends WebController {
     }
 
 
-    /*@RequestMapping(value = "/agent", method = RequestMethod.POST)
+    @RequestMapping(value = "/agent", method = RequestMethod.POST)
     public String list(Pagination pagination, Model model){
         Map<String,Object> searchParams= Maps.newHashMap();
         pagination.setPageSize(5);
@@ -176,7 +187,7 @@ public class LineController extends WebController {
         model.addAttribute("page", stas);
 
         return "statistics/agentNested";
-    }*/
+    }
 
 
 

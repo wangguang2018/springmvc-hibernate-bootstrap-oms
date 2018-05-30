@@ -20,7 +20,7 @@ $(function() {
 
 function agentPageInit(page){
     $.ajax({
-        url: ctx+"/main/agent",
+        url: ctx+"/echart/line/agent",
         type: "POST",
         data: {page:page,pageSize:5},
         success: function(data) {

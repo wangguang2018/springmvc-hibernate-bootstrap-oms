@@ -16,6 +16,11 @@
 <script src="${ctx}/static/third/dialog/dialog.js"></script>
 <script src="${ctx}/static/third/jquery/jquery.validate.min.js"></script>
 <script src="${ctx}/static/js/app.js"></script>
+
+<!-- DATETIMEPICKER-->
+<script src="${ctx}/static/bootstrap-plugins/bootstrap-datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="${ctx}/static/bootstrap-plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="${ctx}/static/third/form-editable/bootstrap-editable.min.js"></script>
 <script>
     var ctx = "${ctx}";
 </script>
