@@ -9,7 +9,10 @@
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:applicationContext.xml</param-value>
+		<param-value>
+			classpath*:/applicationContext.xml
+			classpath*:/applicationContext-web.xml
+		</param-value>
 	</context-param>
 
 
@@ -52,6 +55,18 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
+
+	<!-- Shiro Security filter -->
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
 
 	<filter>
 		<filter-name>Spring OpenEntityManagerInViewFilter</filter-name>

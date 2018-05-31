@@ -2,7 +2,7 @@ package com.wangguang.entity.member;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.wangguang.entity.common.BaseEntity;
+import com.wangguang.model.BaseEntity;
 import com.wangguang.model.GlobalConstant;
 
 import javax.persistence.*;

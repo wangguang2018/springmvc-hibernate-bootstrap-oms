@@ -15,6 +15,7 @@
 <script src="${ctx}/static/third/jquery/jquery.localize.js"></script>
 <script src="${ctx}/static/third/dialog/dialog.js"></script>
 <script src="${ctx}/static/third/jquery/jquery.validate.min.js"></script>
+<script src="${ctx}/static/libs/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 <script src="${ctx}/static/js/app.js"></script>
 
 <!-- DATETIMEPICKER-->

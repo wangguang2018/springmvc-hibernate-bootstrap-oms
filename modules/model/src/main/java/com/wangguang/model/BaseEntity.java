@@ -1,7 +1,7 @@
-package com.wangguang.entity.common;
+package com.wangguang.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.wangguang.enums.EnumFlag;
+import com.wangguang.model.enums.EnumFlag;
 
 import javax.persistence.*;
 import java.io.Serializable;

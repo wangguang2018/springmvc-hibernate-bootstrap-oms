@@ -1,6 +1,6 @@
 package com.wangguang.entity.member;
 
-import com.wangguang.entity.common.BaseEntity;
+import com.wangguang.model.BaseEntity;
 import org.hibernate.annotations.Where;
 
 import javax.persistence.Column;

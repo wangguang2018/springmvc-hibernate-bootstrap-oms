@@ -1,7 +1,7 @@
 package com.wangguang.entity;
 
 
-import com.wangguang.entity.common.BaseEntity;
+import com.wangguang.model.BaseEntity;
 
 import javax.persistence.Entity;
 import java.math.BigDecimal;
