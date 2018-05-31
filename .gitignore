@@ -21,3 +21,6 @@ gen
 /modules/model/.gradle/
 /modules/service/.gradle/
 /modules/service/build/
+/modules/core/.gradle/
+/modules/core/build/
+/modules/core/out/
