@@ -3,7 +3,7 @@ apply plugin: 'java'
 //核心包工程
 project(':modules:service') {
     dependencies {
-        //compile project(':modules:core')
+        compile project(':modules:core')
         compile project(':modules:model')
 
         compile("org.glassfish.jersey.ext:jersey-spring3:${jerseyVersion}") {

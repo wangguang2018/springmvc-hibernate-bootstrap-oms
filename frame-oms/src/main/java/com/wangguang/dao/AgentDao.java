@@ -1,6 +1,6 @@
 package com.wangguang.dao;
 
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.model.BaseDao;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

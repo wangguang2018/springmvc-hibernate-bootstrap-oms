@@ -4,7 +4,7 @@ package com.wangguang.service;
 import com.wangguang.common.bo.Constant;
 import com.wangguang.dao.AgentDao;
 import com.wangguang.dao.UserRepository;
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.entity.SignOption;
 import com.wangguang.enums.EnumFlag;
 import com.wangguang.model.BaseDao;

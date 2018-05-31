@@ -3,7 +3,7 @@ package com.wangguang.controller.game;
 
 import com.wangguang.common.vo.Pagination;
 import com.wangguang.controller.common.WebController;
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.service.DollLogService;
 import com.wangguang.web.JsonMap;
 import com.wangguang.web.Servlets;

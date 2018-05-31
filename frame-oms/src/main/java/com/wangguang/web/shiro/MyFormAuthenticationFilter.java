@@ -1,6 +1,6 @@
 package com.wangguang.web.shiro;
 
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.model.sys.User;
 import com.wangguang.service.AccountService;
 import com.wangguang.service.AdminLogLoginService;

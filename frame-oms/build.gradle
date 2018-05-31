@@ -15,13 +15,15 @@ apply plugin: 'war'
 
 sourceCompatibility = 1.8
 
+
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     compile project(':modules:service')
-    //compile project(':modules:core')
+    compile project(':modules:core')
     compile project(':modules:model')
     compile project(':dm-dto')
 

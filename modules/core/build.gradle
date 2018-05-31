@@ -1,0 +1,12 @@
+//核心包工程
+project(':modules:core') {
+    dependencies {
+        compile fileTree(include: '*.jar', dir: 'src/libs')
+        compile(
+                "org.apache.httpcomponents:httpclient:${httpclientVersion}",
+                "org.apache.httpcomponents:httpmime:${httpclientVersion}"
+        )
+
+        compile "com.aliyun.oss:aliyun-sdk-oss:2.4.0"
+    }
+}

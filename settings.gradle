@@ -3,5 +3,6 @@ include 'modules'
 include 'frame-oms'
 include 'modules:service'
 include 'modules:model'
+include 'modules:core'
 include 'dm-dto'
 

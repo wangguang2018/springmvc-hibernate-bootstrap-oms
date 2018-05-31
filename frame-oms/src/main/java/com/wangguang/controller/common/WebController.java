@@ -1,12 +1,15 @@
 package com.wangguang.controller.common;
 
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.model.enums.EnumAdminType;
 import com.wangguang.model.sys.Role;
 import com.wangguang.model.sys.User;
+import com.wangguang.service.AccountService;
 import com.wangguang.service.AgentService;
 import com.wangguang.web.DateEditor;
 import com.wangguang.web.JsonMap;
+import com.wangguang.web.shiro.ShiroDbRealm;
+import org.apache.shiro.SecurityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindingResult;
@@ -34,6 +37,9 @@ public abstract class WebController {
 
     @Resource
     private AgentService agentService;
+
+    @Resource
+    private AccountService accountService;
 
    
 
@@ -76,20 +82,17 @@ public abstract class WebController {
      * @return 登陆用户
      */
     public User getLoginUser() {
-        //ShiroDbRealm.ShiroUser user = (ShiroDbRealm.ShiroUser) SecurityUtils.getSubject().getPrincipal();
+        ShiroDbRealm.ShiroUser user = (ShiroDbRealm.ShiroUser) SecurityUtils.getSubject().getPrincipal();
 
-       /* if (user != null) {
+        if (user != null) {
             return accountService.findUserByAccount(user.getAccount());
-        }*/
+        }
         return null;
     }
 
 
     public boolean isAgent(){
         User user =  getLoginUser();
-        if(user==null){
-            return false;
-        }
         List<Role> roles = user.getRoleList();
         for(Role role : roles){
             if(role.getId().intValue() != EnumAdminType.ADMIN.value){

@@ -7,7 +7,7 @@ import com.wangguang.common.vo.Pagination;
 import com.wangguang.controller.common.WebController;
 import com.wangguang.dao.AgentDao;
 import com.wangguang.dto.StatisticDto;
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.model.enums.EnumStatisticsSearchType;
 import com.wangguang.model.sys.User;
 import com.wangguang.service.AgentService;

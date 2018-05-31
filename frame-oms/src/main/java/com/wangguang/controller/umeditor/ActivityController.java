@@ -7,7 +7,7 @@ import com.wangguang.common.vo.Pagination;
 import com.wangguang.controller.common.WebController;
 import com.wangguang.dao.AgentDao;
 import com.wangguang.entity.Activity;
-import com.wangguang.entity.Agent;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.service.ActivityService;
 import com.wangguang.services.CommonService;
 import com.wangguang.web.JsonMap;

@@ -1,7 +1,6 @@
-package com.wangguang.entity;
+package com.wangguang.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import com.wangguang.model.BaseEntity;
 import com.wangguang.model.sys.User;
 import org.hibernate.annotations.NotFound;
