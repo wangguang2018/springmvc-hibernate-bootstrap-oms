@@ -28,7 +28,7 @@ public class MenuController extends WebController {
 	private MenuService menuService;
 
 	/** 菜单 列表 */
-	@RequiresPermissions("menu:view")
+	@RequiresPermissions("chargeOption:view")
 	@RequestMapping(value="/menus", method = RequestMethod.GET)
 	public String list(Pagination pagination, @RequestParam(value = "pid", required = false) Integer pid, Model model) {
 		model.addAttribute("pagination", pagination);
@@ -37,7 +37,7 @@ public class MenuController extends WebController {
 	}
 
 	/** 菜单列表 */
-	//@RequiresPermissions("menu:view")
+	@RequiresPermissions("chargeOption:view")
 	@RequestMapping(value = "/menus", method = RequestMethod.POST)
 	public String list(Pagination pagination, @RequestParam(value = "pid", required = false) Integer pid,
 					   HttpServletRequest request, Model model) {
