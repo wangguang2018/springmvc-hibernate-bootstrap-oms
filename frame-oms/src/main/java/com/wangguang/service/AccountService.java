@@ -14,7 +14,9 @@ import com.wangguang.dao.UserRepository;
 import com.wangguang.model.BaseDao;
 import com.wangguang.model.sys.User;
 import com.wangguang.services.CommonService;
+import com.wangguang.web.shiro.ShiroDbRealm;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.SecurityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -270,9 +272,8 @@ public class AccountService extends BaseService<User, Integer> {
      * 取出Shiro中的当前用户登陆帐号
      */
     public String getCurrentAccount() {
-        /*ShiroUser user = (ShiroUser) SecurityUtils.getSubject().getPrincipal();
-        return user.account;*/
-        return "admin";
+        ShiroDbRealm.ShiroUser user = (ShiroDbRealm.ShiroUser) SecurityUtils.getSubject().getPrincipal();
+        return user.account;
     }
 
     /**

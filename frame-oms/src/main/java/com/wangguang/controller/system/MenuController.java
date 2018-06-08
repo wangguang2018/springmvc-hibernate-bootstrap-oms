@@ -6,6 +6,7 @@ import com.wangguang.model.sys.Menu;
 import com.wangguang.service.MenuService;
 import com.wangguang.web.JsonMap;
 import com.wangguang.web.Servlets;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,7 @@ public class MenuController extends WebController {
 	private MenuService menuService;
 
 	/** 菜单 列表 */
-	//@RequiresPermissions("menu:view")
+	@RequiresPermissions("menu:view")
 	@RequestMapping(value="/menus", method = RequestMethod.GET)
 	public String list(Pagination pagination, @RequestParam(value = "pid", required = false) Integer pid, Model model) {
 		model.addAttribute("pagination", pagination);
