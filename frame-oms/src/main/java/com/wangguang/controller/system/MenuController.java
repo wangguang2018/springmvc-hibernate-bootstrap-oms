@@ -52,7 +52,7 @@ public class MenuController extends WebController {
 	}
 
 	/** 创建菜单 */
-	//@RequiresPermissions("menu:update")
+	@RequiresPermissions("menu:update")
 	@RequestMapping(value = "/menu", method = RequestMethod.GET)
 	public String add(Pagination pagination, @RequestParam(value = "pid", required = false) Integer pid, Model model) {
 		model.addAttribute("menu", new Menu());
@@ -63,7 +63,7 @@ public class MenuController extends WebController {
 	}
 
 	/** 编辑菜单 */
-	//@RequiresPermissions("menu:update")
+	@RequiresPermissions("menu:update")
 	@RequestMapping(value = "/menu/{id}", method = RequestMethod.GET)
 	public String edit(@PathVariable("id") Integer id, Pagination pagination, Model model) {
 		model.addAttribute("menu", menuService.findMenu(id));
@@ -74,7 +74,7 @@ public class MenuController extends WebController {
 
 	/** 保存菜单 */
 	@ResponseBody
-	//@RequiresPermissions("menu:update")
+	@RequiresPermissions("menu:update")
 	@RequestMapping(value = "/menu", method = RequestMethod.POST)
 	public JsonMap save(@Valid Menu menu, BindingResult result) {
 		JsonMap ret;
@@ -89,7 +89,7 @@ public class MenuController extends WebController {
 
 	/** 删除菜单 */
 	@ResponseBody
-	//@RequiresPermissions("menu:delete")
+	@RequiresPermissions("menu:delete")
 	@RequestMapping(value = "/menu/delete", method = RequestMethod.POST)
 	public JsonMap delete(@RequestParam("id[]") Integer[] ids) {
 		menuService.delete(ids);

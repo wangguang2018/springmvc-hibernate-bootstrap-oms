@@ -101,7 +101,7 @@
 	</bean>-->
 
 	<!-- 将Controller抛出的异常转到特定View, 保持SiteMesh的装饰效果 -->
-	<bean class="com.dm.web.common.exception.ExceptionResolver">
+	<!--<bean class="com.dm.web.common.exception.ExceptionResolver">
 		<property name="exceptionMappings">
 			<props>
 				<prop key="org.apache.shiro.authz.UnauthorizedException">error/403</prop>
@@ -109,7 +109,7 @@
 			</props>
 		</property>
 		<property name="defaultStatusCode" value="500" />
-	</bean>
+	</bean>-->
 
 
 	<!-- 支持 Shiro对Controller的方法级AOP安全控制  begin-->

@@ -1,14 +1,13 @@
 package com.wangguang.model.enums;
 
+public enum ExchangeTypeEnum {
+    POINT(1, "积分"),FRAGMENT(2, "碎片"),DOLL(3, "娃娃");
 
-public enum EnumAdminType {
-    ADMIN(1, "管理员"), AGENT(2, "代理商"),Qudao(3, "渠道商");
     public int value;
     public String label;
 
-    EnumAdminType(int value, String label) {
+    ExchangeTypeEnum(int value, String label) {
         this.value = value;
         this.label = label;
     }
-
 }

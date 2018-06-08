@@ -1,11 +1,10 @@
-package com.wangguang.entity;
+package com.wangguang.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.wangguang.model.BaseEntity;
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
 /**
  * 娃娃机
