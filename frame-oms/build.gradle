@@ -18,6 +18,8 @@ sourceCompatibility = 1.8
 
 
 repositories {
+    maven {url 'http://maven.ydd100.cn/repository/maven-public/'}
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public'}
     mavenCentral()
 }
 
@@ -89,6 +91,13 @@ dependencies {
     compile("mysql:mysql-connector-java:5.1.9")
 
     compile "org.slf4j:slf4j-api:${slf4jVersion}"
+
+
+    compile ('com.ydd:gt-common:1.0.8') {
+        transitive = false
+    }
+    compile 'com.ydd:gt-machine-api:1.0.8'
+    compile 'com.alibaba:fastjson:1.2.10'
 
 
 

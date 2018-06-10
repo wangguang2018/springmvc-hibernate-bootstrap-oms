@@ -3,9 +3,9 @@ package com.wangguang.service;
 
 import com.wangguang.dao.ActivityDao;
 import com.wangguang.entity.Activity;
-import com.wangguang.enums.EnumFlag;
 import com.wangguang.model.BaseDao;
 import com.wangguang.model.enums.ActivityEnum;
+import com.wangguang.model.enums.EnumFlag;
 import com.wangguang.model.repositories.JpaDao;
 import com.wangguang.services.CommonService;
 import com.wangguang.web.JsonMap;

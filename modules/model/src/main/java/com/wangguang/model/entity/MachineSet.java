@@ -1,8 +1,9 @@
 package com.wangguang.model.entity;
 
-import com.dm.model.BaseEntity;
-import com.dm.model.enums.EnumOpenExposureSetting;
-import com.dm.model.enums.EnumexposureMode;
+
+import com.wangguang.model.BaseEntity;
+import com.wangguang.model.enums.EnumOpenExposureSetting;
+import com.wangguang.model.enums.EnumexposureMode;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
@@ -69,13 +70,13 @@ public class MachineSet extends BaseEntity {
 
     /**
      * 曝光值开关
-     *@see com.dm.model.enums.EnumOpenExposureSetting
+     *@see com.wangguang.model.enums.EnumOpenExposureSetting
      */
     private Integer openExposureSetting = EnumOpenExposureSetting.OFF.value;
 
     /**
      * 曝光选项
-     * @see com.dm.model.enums.EnumexposureMode
+     * @see com.wangguang.model.enums.EnumexposureMode
      */
     private Integer exposureMode = EnumexposureMode.userDefined.getValue();
 
@@ -112,13 +113,13 @@ public class MachineSet extends BaseEntity {
 
     /**
      * 是否使用测试流
-     * @see com.dm.model.enums.TestStreamSwitchEnum
+     * @see com.wangguang.model.enums.TestStreamSwitchEnum
      */
     private Integer testStreamSwitch;
 
     /**
      * 旋转角度
-     * @see com.dm.model.enums.EnumStreamAngleOfRotationType
+     * @see com.wangguang.model.enums.EnumStreamAngleOfRotationType
      */
     private Integer rotationAngle;
 

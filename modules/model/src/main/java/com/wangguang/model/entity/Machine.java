@@ -2,9 +2,10 @@ package com.wangguang.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.wangguang.model.BaseEntity;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 /**
  * 娃娃机
@@ -87,14 +88,14 @@ public class Machine extends BaseEntity {
      */
     private Integer online;
 
-   // private Agent agent;
+    private Agent agent;
 
     /**
      * 机器编号
      */
     private String mark;
 
-    //private MachineSet machineSet;
+    private MachineSet machineSet;
 
     /**
      * 排序
@@ -102,14 +103,14 @@ public class Machine extends BaseEntity {
     private int sort = 0;
 
 
-   /* @OneToOne(mappedBy = "machine",fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "machine",fetch = FetchType.LAZY)
     public MachineSet getMachineSet() {
         return machineSet;
     }
 
     public void setMachineSet(MachineSet machineSet) {
         this.machineSet = machineSet;
-    }*/
+    }
 
 
 
@@ -266,7 +267,7 @@ public class Machine extends BaseEntity {
         this.agentId = agentId;
     }
 
-    /*@NotFound(action = NotFoundAction.IGNORE)
+    @NotFound(action = NotFoundAction.IGNORE)
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "agent_id", insertable = false, updatable = false)
     public Agent getAgent() {
@@ -275,7 +276,7 @@ public class Machine extends BaseEntity {
 
     public void setAgent(Agent agent) {
         this.agent = agent;
-    }*/
+    }
 
 
     public String getClientIp() {

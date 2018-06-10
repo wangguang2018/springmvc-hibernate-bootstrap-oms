@@ -1,24 +1,31 @@
 package com.wangguang.service;
 
-
 import com.google.common.collect.Lists;
+import com.wangguang.core.utils.JsonUtils;
 import com.wangguang.dao.MachineDao;
 import com.wangguang.dao.MachineSetDao;
+import com.wangguang.dto.*;
+import com.wangguang.message.MessageKeyEnum;
+import com.wangguang.message.MessagePubService;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.dto.EnCodeLevelListDto;
+import com.wangguang.model.dto.RoomDto;
+import com.wangguang.model.entity.Agent;
 import com.wangguang.model.entity.Machine;
 import com.wangguang.model.entity.MachineSet;
+import com.wangguang.model.entity.Product;
+import com.wangguang.model.enums.EnumEncodeLevel;
 import com.wangguang.model.enums.EnumFlag;
+import com.wangguang.model.enums.EnumStreamAngleOfRotationType;
+import com.wangguang.model.enums.EnumexposureMode;
 import com.wangguang.services.CommonService;
+import com.wangguang.services.ExceptionCode;
+import com.wangguang.services.RedisService;
+import com.wangguang.web.JsonMap;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
@@ -35,12 +42,12 @@ public class MachineService extends BaseService<Machine, Integer> {
     private CommonService commonService;
 
    /* @Resource
-    private HxService hxService;*/
+    private HxService hxService;
 
-    /*@Resource
-    private RedisService redisService;*/
+    @Resource
+    private RedisService redisService;
 
-    /*@Resource
+    @Resource
     private MessagePubService messagePubService;*/
 
     @Resource
@@ -52,9 +59,6 @@ public class MachineService extends BaseService<Machine, Integer> {
 
     @PersistenceContext
     private EntityManager entityManager;
-
-    @Resource
-    private RestTemplate restTemplate;
 
 
     @Resource
@@ -68,14 +72,14 @@ public class MachineService extends BaseService<Machine, Integer> {
         if (machine.getId() == null) {
             machine.setCreateTime(commonService.getCurrentTime());
             //创建环信聊天室
-            /*String chatRoom = hxService.createChatRoom(machine.getSn(), machine.getAgentId());
-            machine.setChatRoom(chatRoom);*/
+           // String chatRoom = hxService.createChatRoom(machine.getSn(), machine.getAgentId());
+            //machine.setChatRoom(chatRoom);
             machine.setMemberCount(0);
         } else {
             machine.setUpdateTime(commonService.getCurrentTime());
             if (StringUtils.isBlank(machine.getChatRoom())) {
                 //创建环信聊天室
-                /*String chatRoom = hxService.createChatRoom(machine.getSn(), machine.getAgentId());
+               /* String chatRoom = hxService.createChatRoom(machine.getSn(), machine.getAgentId());
                 machine.setChatRoom(chatRoom);*/
             }
         }
@@ -145,45 +149,17 @@ public class MachineService extends BaseService<Machine, Integer> {
 
             MachineSetDto machineSetDto = new MachineSetDto();
 
-//            machineSetDto.setCmd("machineSet");
-//            machineSetDto.setVmcNo(machine.getSn());
-//            machineSetDto.setProbability(machineSet.getProbability());
-//            machineSetDto.setGameMode(machineSet.getGameMode());
-//            machineSetDto.setStrongVoltage(machineSet.getStrongVoltage());
-//            machineSetDto.setSmallVoltage(machineSet.getSmallVoltage());
-//            machineSetDto.setChangeTime(machineSet.getChangeTime());
-//            machineSetDto.setChangeWeak(machineSet.getChangeWeak());
-//            redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineSetDto));//发送给机器
+            machineSetDto.setCmd("machineSet");
+            machineSetDto.setVmcNo(machine.getSn());
+            machineSetDto.setProbability(machineSet.getProbability());
+            machineSetDto.setGameMode(machineSet.getGameMode());
+            machineSetDto.setStrongVoltage(machineSet.getStrongVoltage());
+            machineSetDto.setSmallVoltage(machineSet.getSmallVoltage());
+            machineSetDto.setChangeTime(machineSet.getChangeTime());
+            machineSetDto.setChangeWeak(machineSet.getChangeWeak());
+           // redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineSetDto));//发送给机器
 
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-            MultiValueMap<String, Object> map= new LinkedMultiValueMap<>();
-            map.add("gameMode", machineSet.getGameMode());
-            map.add("strongVoltage", machineSet.getStrongVoltage());
-            map.add("smallVoltage", machineSet.getSmallVoltage());
-            map.add("changeTime", machineSet.getChangeTime());
-            map.add("probability", machineSet.getProbability());
-            map.add("changeWeak", machineSet.getChangeWeak());
-
-            HttpEntity<MultiValueMap<String, Object>> request = new HttpEntity<>(map, headers);
-            sendPostRequest(machine.getSn(), "/machine/" + machine.getSn() + "/setting/grab", request);
         }
-    }
-
-    /**
-     * 发送Post请求
-     *
-     * @param machineSn 机器编号
-     * @param uri 地址
-     * @return 请求结果
-     */
-    private void sendPostRequest(String machineSn, String uri, HttpEntity request) {
-        // 获取机器连接服务器对应ip
-        String machineServiceIp = MachineGlobalCache.machineServiceMap.get(machineSn);
-        // 发送请求
-       /* Result result = restTemplate.postForObject("http://" + machineServiceIp + uri, request, Result.class);
-        logger.info("机器【{}】内容：{}", machineSn, JsonUtils.encode(result));*/
     }
 
     public JsonMap machineIdsCache(List<Machine> list) {
@@ -192,126 +168,60 @@ public class MachineService extends BaseService<Machine, Integer> {
             ids.add(machine.getId());
         }
         String jsonString = com.alibaba.fastjson.JSON.toJSONString(ids);
-        redisService.set("machine-param-set-ids", jsonString);
+       // redisService.set("machine-param-set-ids", jsonString);
         return new JsonMap();
     }
 
     private void send(MachineSet machineSet, Byte encodeLevelSwitch, String machineSn) {
-//        MachineVideoDto machineVideoDto = new MachineVideoDto();
-//        machineVideoDto.setCmd("setting_video");
-//        machineVideoDto.setVmcNo(machineSn);
+        MachineVideoDto machineVideoDto = new MachineVideoDto();
+        machineVideoDto.setCmd("setting_video");
+        machineVideoDto.setVmcNo(machineSn);
         //设置分辨率,分辨率选得不是“不设置”
-//        if (encodeLevelSwitch == 1) {
-//            machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
-//            machineVideoDto.setWidth(machineSet.getWidth());
-//            machineVideoDto.setHeight(machineSet.getHeight());
-//        }
-
-//        machineVideoDto.setExposureMode(machineSet.getExposureMode());
-//        machineVideoDto.setSlaveExposure(machineSet.getSlaveExposure());
-//        machineVideoDto.setMasterExposure(machineSet.getMasterExposure());
-//        machineVideoDto.setMasterBrightness(machineSet.getMasterBrightness());
-//        machineVideoDto.setSlaveBrightness(machineSet.getSlaveBrightness());
-//        machineVideoDto.setMasterSaturability(machineSet.getMasterSaturability());
-//        machineVideoDto.setSlaveSaturability(machineSet.getSlaveSaturability());
-//        redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineVideoDto));//发送给机器
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        MultiValueMap<String, String> map= new LinkedMultiValueMap<>();
-
         if (encodeLevelSwitch == 1) {
-            map.add("encodeLevel", converToString(machineSet.getEncodeLevel()));
-            map.add("width", converToString(machineSet.getWidth()));
-            map.add("height", converToString(machineSet.getHeight()));
+            machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
+            machineVideoDto.setWidth(machineSet.getWidth());
+            machineVideoDto.setHeight(machineSet.getHeight());
         }
 
-        map.add("masterExposure", converToString(machineSet.getMasterExposure()));
-        map.add("slaveExposure", converToString(machineSet.getSlaveExposure()));
-        map.add("exposureMode", converToString(machineSet.getExposureMode()));
-        map.add("masterBrightness", converToString(machineSet.getMasterBrightness()));
-        map.add("slaveBrightness", converToString(machineSet.getSlaveBrightness()));
-        map.add("masterSaturability", converToString(machineSet.getMasterSaturability()));
-        map.add("slaveSaturability", converToString(machineSet.getSlaveSaturability()));
-
-
-        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
-        sendPostRequest(machineSn, "/machine/" + machineSn + "/setting/camera", request);
-    }
-
-    public String converToString(Object object) {
-        if (object == null) {
-            return null;
-        }
-        return object.toString();
+        machineVideoDto.setExposureMode(machineSet.getExposureMode());
+        machineVideoDto.setSlaveExposure(machineSet.getSlaveExposure());
+        machineVideoDto.setMasterExposure(machineSet.getMasterExposure());
+        machineVideoDto.setMasterBrightness(machineSet.getMasterBrightness());
+        machineVideoDto.setSlaveBrightness(machineSet.getSlaveBrightness());
+        machineVideoDto.setMasterSaturability(machineSet.getMasterSaturability());
+        machineVideoDto.setSlaveSaturability(machineSet.getSlaveSaturability());
+        //redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineVideoDto));//发送给机器
     }
 
     private void send(MachineSet dataBaseData, MachineSet machineSet, Byte encodeLevelSwitch, String machineSn) {
-//        MachineVideoDto machineVideoDto = new MachineVideoDto();
-//        machineVideoDto.setCmd("setting_video");
-//        machineVideoDto.setVmcNo(machineSn);
-//        //设置分辨率,分辨率选得不是“不设置”
-//        if (encodeLevelSwitch == 1) {
-//            if (dataBaseData.getEncodeLevel() != null) {
-//                if (dataBaseData.getEncodeLevel().intValue() != machineSet.getEncodeLevel().intValue()) {
-//                    machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
-//                }
-//            } else {
-//                machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
-//            }
-//
-//            if (machineSet.getEncodeLevel().intValue() == EnumEncodeLevel.userDefined.value) {//自定义分辨率
-//                machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
-//                machineVideoDto.setWidth(machineSet.getWidth());
-//                machineVideoDto.setHeight(machineSet.getHeight());
-//            }
-//        }
-//
-//        machineVideoDto.setExposureMode(machineSet.getExposureMode());
-//        machineVideoDto.setSlaveExposure(machineSet.getSlaveExposure());
-//        machineVideoDto.setMasterExposure(machineSet.getMasterExposure());
-//        machineVideoDto.setMasterBrightness(machineSet.getMasterBrightness());
-//        machineVideoDto.setSlaveBrightness(machineSet.getSlaveBrightness());
-//        machineVideoDto.setMasterSaturability(machineSet.getMasterSaturability());
-//        machineVideoDto.setSlaveSaturability(machineSet.getSlaveSaturability());
-//        redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineVideoDto));//发送给机器
-
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        MultiValueMap<String, String> map= new LinkedMultiValueMap<>();
-
-
-//        MachineVideoDto machineVideoDto = new MachineVideoDto();
-//        machineVideoDto.setCmd("setting_video");
-//        machineVideoDto.setVmcNo(machineSn);
+        MachineVideoDto machineVideoDto = new MachineVideoDto();
+        machineVideoDto.setCmd("setting_video");
+        machineVideoDto.setVmcNo(machineSn);
         //设置分辨率,分辨率选得不是“不设置”
         if (encodeLevelSwitch == 1) {
             if (dataBaseData.getEncodeLevel() != null) {
                 if (dataBaseData.getEncodeLevel().intValue() != machineSet.getEncodeLevel().intValue()) {
-                    map.add("encodeLevel", converToString(machineSet.getEncodeLevel()));
+                    machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
                 }
             } else {
-                map.add("encodeLevel", converToString(machineSet.getEncodeLevel()));
+                machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
             }
 
             if (machineSet.getEncodeLevel().intValue() == EnumEncodeLevel.userDefined.value) {//自定义分辨率
-                map.add("encodeLevel", converToString(machineSet.getEncodeLevel()));
-                map.add("width", converToString(machineSet.getWidth()));
-                map.add("height", converToString(machineSet.getHeight()));
+                machineVideoDto.setEncodeLevel(machineSet.getEncodeLevel());
+                machineVideoDto.setWidth(machineSet.getWidth());
+                machineVideoDto.setHeight(machineSet.getHeight());
             }
         }
 
-        map.add("exposureMode", converToString(machineSet.getExposureMode()));
-        map.add("masterExposure", converToString(machineSet.getMasterExposure()));
-        map.add("slaveExposure", converToString(machineSet.getSlaveExposure()));
-        map.add("masterBrightness", converToString(machineSet.getMasterBrightness()));
-        map.add("slaveBrightness", converToString(machineSet.getSlaveBrightness()));
-        map.add("masterSaturability", converToString(machineSet.getMasterSaturability()));
-        map.add("slaveSaturability", converToString(machineSet.getSlaveSaturability()));
-
-        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
-        sendPostRequest(machineSn, "/machine/" + machineSn + "/setting/camera", request);
+        machineVideoDto.setExposureMode(machineSet.getExposureMode());
+        machineVideoDto.setSlaveExposure(machineSet.getSlaveExposure());
+        machineVideoDto.setMasterExposure(machineSet.getMasterExposure());
+        machineVideoDto.setMasterBrightness(machineSet.getMasterBrightness());
+        machineVideoDto.setSlaveBrightness(machineSet.getSlaveBrightness());
+        machineVideoDto.setMasterSaturability(machineSet.getMasterSaturability());
+        machineVideoDto.setSlaveSaturability(machineSet.getSlaveSaturability());
+        //redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineVideoDto));//发送给机器
     }
 
 
@@ -410,7 +320,7 @@ public class MachineService extends BaseService<Machine, Integer> {
         }
         pushStreamDto.setRotationAngle(rotationAngle);
         pushStreamDto.setUseTestEnv(testStreamSwitch);
-        messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, pushStreamDto);
+       // messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, pushStreamDto);
         return new JsonMap(ExceptionCode.NORMAL.errorCode, "更新成功");
     }
 
@@ -497,31 +407,16 @@ public class MachineService extends BaseService<Machine, Integer> {
 
         for (int i = 0; i < dto.getId().size(); i++) {
             Machine machine = machineDao.findOne(dto.getId().get(i));
-//            MachineVideoDto machineVideoDto = new MachineVideoDto();
-//            machineVideoDto.setCmd("setting_video");
-//            machineVideoDto.setVmcNo(machine.getSn());
-//            if (dto.getEncodeLevel().get(i) != null) {
-//                machineVideoDto.setEncodeLevel(dto.getEncodeLevel().get(i));
-//            }
-//            machineVideoDto.setSlaveExposure(dto.getSlaveExposure().get(i));
-//            machineVideoDto.setMasterExposure(dto.getSlaveExposure().get(i));
-//            machineVideoDto.setOpenExposureSetting(1);
-
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            MultiValueMap<String, Object> map= new LinkedMultiValueMap<>();
-
+            MachineVideoDto machineVideoDto = new MachineVideoDto();
+            machineVideoDto.setCmd("setting_video");
+            machineVideoDto.setVmcNo(machine.getSn());
             if (dto.getEncodeLevel().get(i) != null) {
-                map.add("encodeLevel", converToString(dto.getEncodeLevel().get(i)));
+                machineVideoDto.setEncodeLevel(dto.getEncodeLevel().get(i));
             }
-
-            map.add("masterExposure", converToString(dto.getSlaveExposure().get(i)));
-            map.add("slaveExposure", converToString(dto.getSlaveExposure().get(i)));
-            map.add("openExposureSetting", "1");
-
-            HttpEntity<MultiValueMap<String, Object>> request = new HttpEntity<>(map, headers);
-            sendPostRequest(machine.getSn(), "/machine/" + machine.getSn() + "/setting/camera", request);
+            machineVideoDto.setSlaveExposure(dto.getSlaveExposure().get(i));
+            machineVideoDto.setMasterExposure(dto.getMasterExposure().get(i));
+            machineVideoDto.setOpenExposureSetting(1);
+           // redisService.convertAndSend("netty-doll-machine", JsonUtils.encode(machineVideoDto));//发送给机器
         }
         return new JsonMap();
     }
@@ -554,13 +449,13 @@ public class MachineService extends BaseService<Machine, Integer> {
 
         for (Integer id : ids) {
             Machine machine = machineDao.findOne(id);
-            RoomDto roomDto = redisService.get("ROOM_CACHE", machine.getSn(), RoomDto.class);
+           /* RoomDto roomDto = redisService.get("ROOM_CACHE", machine.getSn(), RoomDto.class);
             roomDto.setFixStatus(val);
             if (val == 0) {
                 roomDto.setFrequency(0);
                 roomDto.setStatus(0);
             }
-            redisService.set("ROOM_CACHE", machine.getSn(), roomDto);
+            redisService.set("ROOM_CACHE", machine.getSn(), roomDto);*/
         }
     }
 
@@ -618,22 +513,17 @@ public class MachineService extends BaseService<Machine, Integer> {
         Machine machine = machineDao.findOne(machineId);
         String mes = "";
         if (type == 1) {//重启机器
-//            RebootDto rebootDto = new RebootDto();
-//            rebootDto.setCmd("reboot");
-//            rebootDto.setVmcNo(machine.getSn());
+            RebootDto rebootDto = new RebootDto();
+            rebootDto.setCmd("reboot");
+            rebootDto.setVmcNo(machine.getSn());
             mes = "重启机器成功";
-//            messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, rebootDto);
-
-            restTemplate.postForObject("http://" + MachineGlobalCache.machineServiceMap.get(machine.getSn()) + "/machine/" + machine.getSn() + "/reboot", null, Result.class);
-
+           // messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, rebootDto);
         } else if (type == 2) {//关闭机器
-//            ShutdownDto shutdownDto = new ShutdownDto();
-//            shutdownDto.setCmd("shutdown");
-//            shutdownDto.setVmcNo(machine.getSn());
+            ShutdownDto shutdownDto = new ShutdownDto();
+            shutdownDto.setCmd("shutdown");
+            shutdownDto.setVmcNo(machine.getSn());
             mes = "关闭机器成功";
-//            messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, shutdownDto);
-
-            restTemplate.postForObject("http://" + MachineGlobalCache.machineServiceMap.get(machine.getSn()) + "/machine/" + machine.getSn() + "/shutdown", null, Result.class);
+            //messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, shutdownDto);
         }
         return new JsonMap(ExceptionCode.NORMAL.errorCode,mes);
     }

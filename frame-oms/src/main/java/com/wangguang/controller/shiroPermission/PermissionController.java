@@ -9,6 +9,7 @@ import com.wangguang.model.entity.Agent;
 import com.wangguang.model.entity.Machine;
 import com.wangguang.model.entity.Product;
 import com.wangguang.model.enums.EnumProductType;
+import com.wangguang.service.MachineService;
 import com.wangguang.service.ProductService;
 import com.wangguang.services.CommonService;
 import com.wangguang.web.JsonMap;
