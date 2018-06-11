@@ -31,8 +31,8 @@ import java.util.Map;
  * 娃娃产品
  */
 @Controller
-@RequestMapping("/permission")
-public class PermissionController extends WebController {
+@RequestMapping("/product")
+public class ProductController extends WebController {
 
     @Resource
     private CommonService commonService;

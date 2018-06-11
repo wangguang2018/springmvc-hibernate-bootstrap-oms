@@ -1,3 +1,4 @@
+<%@ page import="com.wangguang.common.bo.Constant" %>
 <%--
   Created by IntelliJ IDEA.
   User: whan
