@@ -52,4 +52,8 @@ public interface MenuRepository extends BaseDao<Menu, Integer> {
 	@Query(value = "delete Menu where id = ?1 ")
 	public void deleteById(int id);*/
 
+
+	@Query(value = "select m from Menu m where m.parentMenu.id is not null and  m.status=:status")
+	public List<Menu> findSonMenus( @Param("status") int status);
+
 }

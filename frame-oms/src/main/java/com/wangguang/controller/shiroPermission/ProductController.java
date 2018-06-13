@@ -14,6 +14,7 @@ import com.wangguang.service.ProductService;
 import com.wangguang.services.CommonService;
 import com.wangguang.web.JsonMap;
 import com.wangguang.web.Servlets;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -28,11 +29,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * shiro的权限点demo
  * 娃娃产品
  */
 @Controller
-@RequestMapping("/permission")
-public class PermissionController extends WebController {
+@RequestMapping("/product")
+public class ProductController extends WebController {
 
     @Resource
     private CommonService commonService;
@@ -43,6 +45,7 @@ public class PermissionController extends WebController {
     @Resource
     private MachineService machineService;
 
+    @RequiresPermissions("product:view")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Pagination pagination, Model model){
         model.addAttribute("pagination", pagination);
@@ -50,6 +53,8 @@ public class PermissionController extends WebController {
         return "product/list";
     }
 
+
+    @RequiresPermissions("product:view")
     @RequestMapping(value = "/list", method = RequestMethod.POST)
     public String list(Pagination pagination, HttpServletRequest request, Model model){
         Map<String, Object> searchParams = Servlets.getParametersStartingWith(request, "search_");
@@ -158,6 +163,7 @@ public class PermissionController extends WebController {
         return list;
     }
 
+    @RequiresPermissions("product:edit")
     @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
     public String edit(@PathVariable("id") Integer id,Model model){
         Product product = productService.get(id);
@@ -183,6 +189,7 @@ public class PermissionController extends WebController {
         return  map;
     }
 
+    @RequiresPermissions("product:edit")
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
     public String edit(Model model,@RequestParam("type") byte type){
         Product product = new Product();
@@ -204,6 +211,7 @@ public class PermissionController extends WebController {
         }
     }
 
+    @RequiresPermissions("product:edit")
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     @ResponseBody
     public JsonMap save(Product product){
@@ -225,6 +233,7 @@ public class PermissionController extends WebController {
      * @param ids
      * @return
      */
+    @RequiresPermissions("product:delete")
     @RequestMapping(value = "/delete",method = RequestMethod.POST)
     @ResponseBody
     public JsonMap delete(@RequestParam("id[]") Integer[] ids){

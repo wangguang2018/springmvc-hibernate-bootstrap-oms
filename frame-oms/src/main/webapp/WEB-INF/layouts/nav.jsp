@@ -1,12 +1,13 @@
 <%--
   Created by IntelliJ IDEA.
-  User: wangyy
-  Date: 2018/3/13
-  Time: 16:18
+  User: whan
+  Date: 10/8/15
+  Time: 4:19 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="tag.jsp" %>
+<!-- top navbar-->
 <header class="topnavbar-wrapper">
     <!-- START Top Navbar-->
     <nav role="navigation" class="navbar topnavbar">
@@ -34,7 +35,7 @@
                     <c:if test="${active == 'zhangshang'}">
                     掌上娃娃机管理系统
                     </c:if>--%>
-                    后台框架系统
+                    后台管理系统
                 </div>
                 <div class="brand-logo-collapsed">
                     <img src="${ctx}/static/img/logo-single.png" alt="App Logo" class="img-responsive">
@@ -168,7 +169,7 @@
                 <%--</li>--%>
                 <%--<!-- END Contacts menu-->--%>
             </ul>
-            <ul class="nav navbar-nav navbar-right" style="float: right; /*height: 100%;*/
+            <ul class="nav navbar-nav navbar-right" style="float: right; height: 100%;
     color: #333;
     font-size: 15px;
     line-height: 50px; padding-right: 10px ">
@@ -629,3 +630,4 @@
     </nav>
     <!-- END Off Sidebar (right)-->
 </aside>
+<!-- Main section-->

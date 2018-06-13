@@ -31,4 +31,5 @@
 <link rel="stylesheet" href="${ctx}/static/third/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="${ctx}/static/third/bootstrap/css/bootstrap_3.0.2.css" >
 <link rel="stylesheet" href="${ctx}/static/css/framework/app.css" >
+<link rel="stylesheet" href="${ctx}/static/third/simple-line-icons/css/simple-line-icons.css">
 <!-- =============== BOOTSTRAP STYLES ===============-->

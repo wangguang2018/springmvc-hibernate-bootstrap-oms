@@ -1,9 +1,12 @@
 package com.wangguang.service;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.wangguang.common.bo.Constant;
 import com.wangguang.common.bo.MenuBo;
 import com.wangguang.dao.MenuRepository;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.enums.EnumStatus;
 import com.wangguang.model.sys.Menu;
 import com.wangguang.model.sys.Role;
 import com.wangguang.model.sys.User;
@@ -25,6 +28,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -265,6 +269,18 @@ public class MenuService extends BaseService<Menu, Integer> {
     public String getMenuHtml() {
         List<Menu> menus = getMenuList();
         return MenuBo.outputHtml(menus);
+    }
+
+    public  List<Map<String, Object>> menuList(){
+        List<Menu> menus = menuDao.findSonMenus(EnumStatus.ENABLE.value.intValue());
+        List<Map<String, Object>> list = Lists.newArrayList();
+        for (Menu a : menus) {
+            Map<String, Object> obj = Maps.newHashMap();
+            obj.put("id", a.getId());
+            obj.put("text", a.getName());
+            list.add(obj);
+        }
+        return list;
     }
 
 
