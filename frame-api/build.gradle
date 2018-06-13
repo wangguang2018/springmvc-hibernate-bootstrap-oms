@@ -1,0 +1,33 @@
+group 'com.iguangtech'
+version '1.0-SNAPSHOT'
+
+
+ext {
+    slf4jVersion = "1.7.6"
+    tomcatjdbcVersion = "7.0.54"
+
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+
+
+repositories {
+    maven {url 'http://maven.ydd100.cn/repository/maven-public/'}
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public'}
+    mavenCentral()
+}
+
+dependencies {
+    //微信小程序开发和小程序支付的第三方工具
+    compile 'com.github.binarywang:weixin-java-miniapp:2.8.0'
+    compile 'com.github.binarywang:weixin-java-pay:2.8.0'
+
+    //阿里云oss对象存储开发
+    compile 'com.aliyun.oss:aliyun-sdk-oss:2.4.0'
+
+
+}
