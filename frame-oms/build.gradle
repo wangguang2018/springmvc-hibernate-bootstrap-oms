@@ -67,6 +67,7 @@ dependencies {
     compile "com.fasterxml.jackson.core:jackson-annotations:2.4.3"
 
     compile("org.apache.tomcat:tomcat-jdbc:${tomcatjdbcVersion}")
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
 
 
 

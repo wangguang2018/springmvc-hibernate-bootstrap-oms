@@ -1,4 +1,4 @@
-package com.wangguang.entity.member;
+package com.wangguang.model.entity.member;
 
 import com.wangguang.model.BaseEntity;
 import org.hibernate.annotations.Where;

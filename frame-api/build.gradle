@@ -29,5 +29,8 @@ dependencies {
     //阿里云oss对象存储开发
     compile 'com.aliyun.oss:aliyun-sdk-oss:2.4.0'
 
+    //极光推送
+    compile "cn.jpush.api:jpush-client:3.2.8"
+
 
 }

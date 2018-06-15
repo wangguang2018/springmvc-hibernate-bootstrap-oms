@@ -1,9 +1,7 @@
-package com.wangguang.entity.member;
+package com.wangguang.model.entity.member;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.wangguang.model.BaseEntity;
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 import java.util.Date;

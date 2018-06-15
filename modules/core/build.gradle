@@ -9,5 +9,6 @@ project(':modules:core') {
 
         compile "com.aliyun.oss:aliyun-sdk-oss:2.4.0"
         compile "com.google.guava:guava:18.0"
+        compile 'net.sf.jxls:jxls-core:1.0.6'
     }
 }

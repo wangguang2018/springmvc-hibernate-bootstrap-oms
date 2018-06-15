@@ -1,7 +1,7 @@
 package com.wangguang.dao.member;
 
-import com.wangguang.entity.member.MemberCard;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.entity.member.MemberCard;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;

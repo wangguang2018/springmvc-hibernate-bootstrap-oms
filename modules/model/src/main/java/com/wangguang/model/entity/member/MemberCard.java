@@ -1,8 +1,8 @@
-package com.wangguang.entity.member;
+package com.wangguang.model.entity.member;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.wangguang.model.entity.Agent;
 import com.wangguang.model.BaseEntity;
+import com.wangguang.model.entity.Agent;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 

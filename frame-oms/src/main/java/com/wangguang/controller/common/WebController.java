@@ -6,6 +6,8 @@ import com.wangguang.model.sys.Role;
 import com.wangguang.model.sys.User;
 import com.wangguang.service.AccountService;
 import com.wangguang.service.AgentService;
+import com.wangguang.service.JxlsExcelView;
+import com.wangguang.services.CommonService;
 import com.wangguang.web.DateEditor;
 import com.wangguang.web.JsonMap;
 import com.wangguang.web.shiro.ShiroDbRealm;
@@ -22,6 +24,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -41,7 +45,17 @@ public abstract class WebController {
     @Resource
     private AccountService accountService;
 
-   
+    @Resource
+    private CommonService commonService;
+
+    protected JxlsExcelView jxlsExcelView;
+
+    @Resource
+    public void setJxlsExcelView(JxlsExcelView jxlsExcelView) {
+        this.jxlsExcelView = jxlsExcelView;
+    }
+
+
 
     /**
      * log4j 记录器
@@ -107,12 +121,57 @@ public abstract class WebController {
         return agentService.findByAdminId(user.getId());
     }
 
+    /**
+     * 获取导出Excel视图
+     *
+     * @param request
+     * @return
+     * @throws Exception
+     */
+    protected ModelAndView getExcelView(HttpServletRequest request, String filename, String extension) throws Exception {
+
+        ModelAndView mav = new ModelAndView();
+        String filePath = request.getParameter("fileName");
+        String location = "static/models/" + filePath;
+        String exportPageNum = request.getParameter("exportPageNum");
+        jxlsExcelView.setExtension(extension);
+        if (null == exportPageNum || "".equals(exportPageNum)) {
+            String now = new SimpleDateFormat("yyyyMMddHHmm").format(commonService.getCurrentTime());
+            jxlsExcelView.setFileName(filename + "_" + now + extension);
+        } else {
+            jxlsExcelView.setFileName(filename + "_" + exportPageNum + extension);
+        }
+        jxlsExcelView.setLocation(location);
+        mav.setView(jxlsExcelView);
+        SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd ");
+        DecimalFormat df = new DecimalFormat("##0.00");
+        mav.addObject("decimalFormat", df);
+        mav.addObject("timeFormat", timeFormat);
+        mav.addObject("dateFormat", dateFormat);
+
+        return mav;
+    }
+
+
     @InitBinder
     protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) throws Exception {
         //对于需要转换为Date类型的属性，使用DateEditor进行处理
         binder.registerCustomEditor(Date.class, new DateEditor());
     }
 
+
+    /**
+     * 获取导出Excel视图
+     *
+     * @param request
+     * @return
+     * @throws Exception
+     */
+    protected ModelAndView getExcelView(HttpServletRequest request) throws Exception {
+        String fileName = request.getParameter("fileName");
+        return  getExcelView(request, fileName, ".xlsx");
+    }
 
 
 }

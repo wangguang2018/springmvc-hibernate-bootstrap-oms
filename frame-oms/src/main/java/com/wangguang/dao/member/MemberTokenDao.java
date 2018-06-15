@@ -1,7 +1,7 @@
 package com.wangguang.dao.member;
 
-import com.wangguang.entity.member.MemberToken;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.entity.member.MemberToken;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 

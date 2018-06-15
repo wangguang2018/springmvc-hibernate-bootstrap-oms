@@ -1,8 +1,8 @@
 package com.wangguang.dao.member;
 
 
-import com.wangguang.entity.member.MemberSummary;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.entity.member.MemberSummary;
 
 /**
  * Dao -

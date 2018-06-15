@@ -1,8 +1,8 @@
 package com.wangguang.dao.member;
 
 
-import com.wangguang.entity.member.MemberAddress;
 import com.wangguang.model.BaseDao;
+import com.wangguang.model.entity.member.MemberAddress;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
