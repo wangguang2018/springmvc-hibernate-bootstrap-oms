@@ -46,7 +46,7 @@ public class Product extends BaseEntity {
 
     /**
      * 类型
-     *@see com.dm.model.enums.EnumProductType
+     *@see com.wangguang.model.enums.EnumProductType
      */
     private byte type;
 

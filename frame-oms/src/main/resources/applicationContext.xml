@@ -110,6 +110,9 @@
         <property name="url" value="jdbc:mysql://localhost:3306/frame_oms" />
         <property name="username" value="root" />
         <property name="password" value="123456" />
+        <!--<property name="url" value="jdbc:mysql://yingdiandian.mysql.rds.aliyuncs.com:3306/doll_machine2" />
+        <property name="username" value="yingdd" />
+        <property name="password" value="Yingdd2015" />-->
         <property name="maxActive" value="50" />
         <property name="maxIdle" value="10" />
         <property name="testOnBorrow" value="true" />

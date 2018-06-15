@@ -23,7 +23,7 @@ public class Machine extends BaseEntity {
      */
     private Integer productId;
 
-    //private Product product;
+    private Product product;
 
     /**
      * 0空闲 1游戏中 2关闭
@@ -155,7 +155,7 @@ public class Machine extends BaseEntity {
         this.status = status;
     }
 
-   /* @JsonIgnore
+    @JsonIgnore
     @NotFound(action = NotFoundAction.IGNORE)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", insertable = false, updatable = false,referencedColumnName = "id")
@@ -165,7 +165,7 @@ public class Machine extends BaseEntity {
 
     public void setProduct(Product product) {
         this.product = product;
-    }*/
+    }
 
 
     public String getChatRoom() {
