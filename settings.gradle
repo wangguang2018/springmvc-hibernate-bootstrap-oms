@@ -1,6 +1,7 @@
 rootProject.name = 'frameForSpringMvcJpaHibernate'
 include 'modules'
 include 'frame-oms'
+include 'frame-api'
 include 'modules:service'
 include 'modules:model'
 include 'modules:core'
