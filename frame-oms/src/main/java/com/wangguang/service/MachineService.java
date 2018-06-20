@@ -310,7 +310,7 @@ public class MachineService extends BaseService<Machine, Integer> {
         //entityManager.clear();
 
         //发送消息给机器
-        MachinePushStreamDto pushStreamDto = new MachinePushStreamDto();
+        /*MachinePushStreamDto pushStreamDto = new MachinePushStreamDto();
         pushStreamDto.setCmd("setting_push_stream"); //设置推流
         pushStreamDto.setVmcNo(set.getMachine().getSn());
         Agent agent = set.getMachine().getAgent();
@@ -319,7 +319,7 @@ public class MachineService extends BaseService<Machine, Integer> {
             pushStreamDto.setAppsecret(agent.getZegoKey());
         }
         pushStreamDto.setRotationAngle(rotationAngle);
-        pushStreamDto.setUseTestEnv(testStreamSwitch);
+        pushStreamDto.setUseTestEnv(testStreamSwitch);*/
        // messagePubService.pub(MessageKeyEnum.PUB_NETTY_DOLL.key, pushStreamDto);
         return new JsonMap(ExceptionCode.NORMAL.errorCode, "更新成功");
     }
@@ -336,12 +336,12 @@ public class MachineService extends BaseService<Machine, Integer> {
             if (set == null) {
                 MachineSet newSet = this.putDataForAdd(machineSet, current);
                 machineSetDao.save(newSet);
-                this.send(newSet, encodeLevelSwitch, machine.getSn());
+                //this.send(newSet, encodeLevelSwitch, machine.getSn());
 
             } else {
                 boolean flag = this.checkMachineVideoDto(set, machineSet, encodeLevelSwitch);
                 if (!flag) {
-                    this.send(set, machineSet, encodeLevelSwitch, machine.getSn());
+                    //this.send(set, machineSet, encodeLevelSwitch, machine.getSn());
                     this.putDataForEdit(set, machineSet, current);
                     machineSetDao.save(set);
                 }

@@ -57,8 +57,8 @@
 
 
                                 <div class="action-group" style="margin-bottom: 53px;">
-                                    <a href="javascript:void(0);" onclick="onlineOperate(2)"  class="btn  btn-warning pull-right ">维护机器</a>
-                                    <a href="javascript:void(0);" onclick="onlineOperate(0)"  class="btn  btn-primary pull-right">恢复正常</a>
+                                    <%--<a href="javascript:void(0);" onclick="onlineOperate(2)"  class="btn  btn-warning pull-right ">维护机器</a>
+                                    <a href="javascript:void(0);" onclick="onlineOperate(0)"  class="btn  btn-primary pull-right">恢复正常</a>--%>
                                     <c:if test="${!isAgent}">
                                         <a  href="javascript:paramSet(-1)"   class="btn  btn-primary pull-right machine-param">机器推流设置</a>
                                     </c:if>

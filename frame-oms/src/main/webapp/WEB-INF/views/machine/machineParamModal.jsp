@@ -14,7 +14,7 @@
         <li role="presentation" class="active"><a href="#camera" data-toggle="tab">摄像头设置</a></li>
         <c:if test="${oneMachineFlag}" >
             <li role="presentation"><a href="#stream" data-toggle="tab">推流设置</a></li>
-            <li role="presentation"><a href="#machineSet" data-toggle="tab">机器启动操作</a></li>
+           <%-- <li role="presentation"><a href="#machineSet" data-toggle="tab">机器启动操作</a></li>--%>
         </c:if>
         </ul>
     <div class="tab-content">
@@ -209,10 +209,10 @@
 
 
         </div >
-        <div id="machineSet" class="row tab-pane fade ">
+        <%--<div id="machineSet" class="row tab-pane fade ">
             <button type="button" class="btn btn-default machine-set reset-machine" data-dismiss="modal">重启机器</button>
             <button type="button" class="btn btn-default machine-set close-machine" data-dismiss="modal">关闭机器</button>
-        </div>
+        </div>--%>
 </c:if>
 
 
