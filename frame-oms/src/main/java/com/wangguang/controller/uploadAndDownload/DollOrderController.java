@@ -21,6 +21,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.OutputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -58,10 +63,10 @@ public class DollOrderController extends WebController {
     }
 
     /**
-     * 导出
+     * 导出(方案一)
      * @return
      */
-    @RequestMapping(value = "/export", method = RequestMethod.GET)
+    @RequestMapping(value = "/export_plan_one", method = RequestMethod.GET)
     public ModelAndView exportReconciliation(HttpServletRequest request) {
         try {
             Map<String, Object> searchParams = Servlets.getParametersStartingWith(request, "search_");
@@ -82,6 +87,51 @@ public class DollOrderController extends WebController {
             e.printStackTrace();
         }
         return null;
+    }
+
+
+
+    /**
+     * 导出(方案二)
+     * @return
+     */
+    @RequestMapping(value = "/export_plan_two", method = RequestMethod.GET)
+    public void exportTest(HttpServletRequest request, HttpServletResponse response) {
+        //en:英文  cn:中文
+        Map<String, Object> searchParams = Servlets.getParametersStartingWith(request, "search_");
+        searchParams.put("EQ_flag",1);
+        if("-1".equals(searchParams.get("EQ_status").toString())){
+            searchParams.remove("EQ_status");
+        }
+        if(isAgent()){
+            Agent agent = getLoginAgent();
+            searchParams.put("EQ_agentId",agent.getId());
+        }
+        String language = request.getParameter("language");
+        File file = dollOrderService.exportExcel(language,searchParams);
+        response.setContentLength((int) file.length());
+        response.setHeader("Content-Disposition", "attachment;filename="
+                + "aaa.xlsx");// 设置在下载框默认显示的文件名
+        response.setContentType("application/octet-stream");// 指明response的返回对象是文件流
+        // 读出文件到response
+        // 这里是先需要把要把文件内容先读到缓冲区
+        // 再把缓冲区的内容写到response的输出流供用户下载
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = new FileInputStream(file);
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(
+                    fileInputStream);
+            byte[] b = new byte[bufferedInputStream.available()];
+            bufferedInputStream.read(b);
+            OutputStream outputStream = response.getOutputStream();
+            outputStream.write(b);
+            bufferedInputStream.close();
+            outputStream.flush();
+            outputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 

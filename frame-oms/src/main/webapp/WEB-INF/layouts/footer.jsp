@@ -19,6 +19,7 @@
 <script src="${ctx}/static/js/app.js"></script>
 <script src="${ctx}/static/libs/select2/js/select2.full.min.js"></script>
 <script src="${ctx}/static/libs/select2/js/i18n/zh-CN.js"></script>
+<script src="${ctx}/static/js/common/timeFormat.js"></script>
 
 <!-- DATETIMEPICKER-->
 <script src="${ctx}/static/bootstrap-plugins/bootstrap-datetimepicker/js/moment-with-locales.min.js"></script>

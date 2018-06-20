@@ -18,11 +18,15 @@ import com.wangguang.web.JsonMap;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.Row;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -44,6 +48,9 @@ public class DollOrderService extends BaseService<Order,Integer> {
 
     /*@Resource
     private MessageService messageService;*/
+
+    @Resource
+    private BigDataExcelService bigDataExcelService;
 
     @Override
     @Resource
@@ -181,6 +188,24 @@ public class DollOrderService extends BaseService<Order,Integer> {
             return new JsonMap(ExceptionCode.EXCEL_FILE_STREAM_ERROR);
         }
         return new JsonMap(ExceptionCode.NORMAL);
+    }
+
+
+    /**
+     * 导出excel
+     * @return
+     */
+    public File exportExcel(String language,Map<String, Object> searchParams) {
+        List<Order> orders = list( searchParams, new Sort(Sort.Direction.DESC, "id"));
+        setProductName(orders);
+        //File file = new File("/opt/"+System.currentTimeMillis()+".xlsx");
+        File file = new File("D:\\export\\"+System.currentTimeMillis()+".xlsx");
+        try {
+            bigDataExcelService.writeToExcel(orders,file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
     }
 
 

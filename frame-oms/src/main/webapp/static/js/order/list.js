@@ -15,7 +15,7 @@ $(function() {
     $("#exportExcel").click(function () {
         var currentHref = window.location.href;
         var now = getNowFormatDate2();
-        var newHref = window.ctx + "/member/order/export?fileName=DollOrderExcel&now="+now;
+        var newHref = window.ctx + "/member/order/export_plan_two?fileName=DollOrderExcel&now="+now;
         if (currentHref.indexOf("?") > -1) {
             newHref = newHref + "&" + currentHref.split("?")[1];
         }
