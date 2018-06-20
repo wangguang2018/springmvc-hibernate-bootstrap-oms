@@ -1,9 +1,11 @@
 package com.wangguang.service;
 
 
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.wangguang.core.utils.ExcelUtils;
 import com.wangguang.dao.OrderDao;
+import com.wangguang.dto.OrderDto;
 import com.wangguang.model.BaseDao;
 import com.wangguang.model.entity.Agent;
 import com.wangguang.model.entity.Order;
@@ -12,6 +14,7 @@ import com.wangguang.model.entity.member.Member;
 import com.wangguang.model.enums.EnumExpress;
 import com.wangguang.model.enums.EnumPlatform;
 import com.wangguang.model.enums.EnumPushType;
+import com.wangguang.model.utils.BeanMapper;
 import com.wangguang.services.CommonService;
 import com.wangguang.services.ExceptionCode;
 import com.wangguang.web.JsonMap;
@@ -201,7 +204,13 @@ public class DollOrderService extends BaseService<Order,Integer> {
         //File file = new File("/opt/"+System.currentTimeMillis()+".xlsx");
         File file = new File("D:\\export\\"+System.currentTimeMillis()+".xlsx");
         try {
-            bigDataExcelService.writeToExcel(orders,file);
+            List<OrderDto> dtoList = Lists.newArrayList();
+            for(Order order : orders){
+                OrderDto dto = new OrderDto();
+                BeanMapper.copy(order,dto);
+                dtoList.add(dto);
+            }
+            bigDataExcelService.writeToExcel(dtoList,file);
         } catch (IOException e) {
             e.printStackTrace();
         }

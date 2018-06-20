@@ -8,5 +8,7 @@ project(':modules:model') {
         compile("org.hibernate:hibernate-validator:4.3.2.Final")
         compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:${hibernateJpaVersion}"
         compile "com.google.guava:guava:18.0"
+        //dozer  对象复制
+        compile "net.sf.dozer:dozer:5.5.1"
     }
 }
