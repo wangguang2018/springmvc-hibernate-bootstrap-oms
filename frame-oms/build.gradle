@@ -1,6 +1,8 @@
 group 'com.wangguang'
 version '1.0-SNAPSHOT'
 
+def env = System.getProperty("profile")
+System.out.print("-----------------------------------------------------------env:"+env)
 
 ext {
     hibernateVersion = "3.6.10.Final"
@@ -14,6 +16,8 @@ apply plugin: 'java'
 apply plugin: 'war'
 
 sourceCompatibility = 1.8
+
+
 
 
 
@@ -133,4 +137,23 @@ dependencies {
 
 
 
+
+
 }
+
+
+/*sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/resources/", "src/main/profile/$env"]
+        }
+    }
+}*/
+
+processResources {
+    from(sourceSets.main.resources.srcDirs)  {
+        include '**/*.properties'
+        filter(org.apache.tools.ant.filters.ReplaceTokens, tokens: loadGroovy())
+    }
+}
+

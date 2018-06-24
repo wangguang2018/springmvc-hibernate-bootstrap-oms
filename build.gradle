@@ -1,12 +1,17 @@
-/*ext {
+ext {
 //    profile = project['profile']
     profile = System.getProperty("profile") ?: "production"
-}*/
+    System.out.println("-----------------------------------profile:"+profile)
+}
 
-/*def loadGroovy() {
+def loadGroovy() {
     def configFile = file('config.groovy')
+    System.out.println("-----------------------------------configFile.toURI().toURL():"+configFile.toURI().toURL())
+    System.out.println("-----------------------------------toProperties():"+new ConfigSlurper(profile).parse(configFile.toURI().toURL()).toProperties())
     return new ConfigSlurper(profile).parse(configFile.toURI().toURL()).toProperties()
-}*/
+}
+
+
 
 configure(allprojects) { project ->
 
@@ -117,6 +122,10 @@ configure(subprojects.findAll{!it.name.contains("dm-dto")}) { subproject ->
     }
 
 }
+
+
+
+
 
 
 
