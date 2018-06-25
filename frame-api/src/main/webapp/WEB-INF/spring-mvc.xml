@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 自动扫描且只扫描@Controller -->
+	<context:component-scan base-package="com.iguangtech.api.controller" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+	<mvc:annotation-driven content-negotiation-manager="contentNegotiationManager">
+		<mvc:message-converters register-defaults="true">
+			<!-- 将StringHttpMessageConverter的默认编码设为UTF-8 -->
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<constructor-arg value="UTF-8" />
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/plain;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+			<!-- 将Jackson2HttpMessageConverter的默认格式化输出设为true -->
+			<bean
+				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>application/json;charset=UTF-8</value>
+					</list>
+				</property>
+				<!--<property name="objectMapper" ref="objectMapper" />-->
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!--<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">
+		<property name="dateFormat">
+			<bean class="java.text.SimpleDateFormat">
+				<constructor-arg>
+					<value>yyyy-MM-dd HH:mm:ss</value>
+				</constructor-arg>
+			</bean>
+		</property>
+		<property name="timeZone" value="GMT+8" />
+		<property name="serializationInclusion">
+			<value type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value>
+		</property>
+	</bean>-->
+
+
+
+	<!-- REST中根据URL后缀自动判定Content-Type及相应的View -->
+	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+	    <property name="mediaTypes" >
+	        <value>
+	            json=application/json
+	            xml=application/xml
+	        </value>
+	    </property>
+	</bean>
+	<!-- 容器默认的DefaultServletHandler处理 所有静态内容与无RequestMapping处理的URL-->
+	<mvc:default-servlet-handler/>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="104857600" />
+        <property name="maxInMemorySize" value="40960" />
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+
+	<mvc:interceptors>
+		<bean class="com.iguangtech.api.interceptor.AccessTokenRequestFilter" />
+	</mvc:interceptors>
+	<!-- end -->
+</beans>

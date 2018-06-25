@@ -22,6 +22,13 @@ repositories {
 }
 
 dependencies {
+
+    compile project(':modules:core')
+    compile project(':modules:model')
+    compile project(':dm-dto')
+    compile project(':modules:service')
+    compile("org.springframework:spring-webmvc:${springLastVersion}")
+
     //微信小程序开发和小程序支付的第三方工具
     compile 'com.github.binarywang:weixin-java-miniapp:2.8.0'
     compile 'com.github.binarywang:weixin-java-pay:2.8.0'

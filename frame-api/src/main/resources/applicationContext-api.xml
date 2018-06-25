@@ -4,9 +4,8 @@
 
 	<description>导入ShowCase中的applicationContext文件列表</description>
 
-	<!-- required -->
-	<import resource="security/applicationContext-shiro.xml" />
 
 	<!-- optional -->
-	<!--<import resource="cache/applicationContext-redis.xml" />-->
+	<!--<import resource="cache/applicationContext-ehcache.xml" />-->
+	<import resource="cache/applicationContext-redis.xml" />
 </beans>
