@@ -1,7 +1,7 @@
-package com.iguangtech.service;
+package com.iguangtech.api.service;
 
-import com.dm.model.entity.Product;
-import com.dm.model.repositories.ProductDao;
+import com.wangguang.model.entity.Product;
+import com.wangguang.model.repositories.ProductDao;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

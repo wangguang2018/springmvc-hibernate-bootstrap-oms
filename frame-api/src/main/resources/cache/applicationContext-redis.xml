@@ -10,11 +10,11 @@
    http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-        <property name="maxTotal" value="${redis.pool.maxTotal}"/>
-        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
-        <property name="minIdle" value="${redis.pool.minIdle}"/>
-        <property name="maxWaitMillis" value="${redis.pool.maxWaitMillis}"/>
-        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}"/>
+        <property name="maxTotal" value="1024"/>
+        <property name="maxIdle" value="200"/>
+        <property name="minIdle" value="40"/>
+        <property name="maxWaitMillis" value="100"/>
+        <property name="testOnBorrow" value="true"/>
     </bean>
 
     <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate"
@@ -23,7 +23,7 @@
     <!-- Jedis ConnectionFactory -->
     <bean id='jedisConnectionFactory'
           class='org.springframework.data.redis.connection.jedis.JedisConnectionFactory'
-          p:hostName='${redis.host}' p:port='${redis.port}' p:password='${redis.password}' p:usePool='true'>
+          p:hostName='121.41.101.63' p:port='6379' p:password='yingdiandian2015' p:usePool='true'>
         <property name="poolConfig" ref="jedisPoolConfig"></property>
     </bean>
 

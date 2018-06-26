@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 import java.util.TimeZone;
 
+import static com.wangguang.services.cache.AccessTokenCache.ACCESS_TOKEN_KEY;
+
 /**
  * Interceptor - accessToken拦截器
  *
@@ -97,11 +99,11 @@ public class AccessTokenRequestFilter extends HandlerInterceptorAdapter {
             request.setAttribute(Constant.MEMBER_ID, 123);
             return true;
         }
-
+        accessTokenCache.pushToken(162,"e4f99926ef12eee88b840a7947b4f78a");
         // 判断accessToken是否合法
         if (!accessTokenCache.isTokenExists(accessToken)) {
             response.setContentType("application/json;charset=utf-8");
-            //response.getWriter().write(buildResponse(ExceptionCode.INVALID_ACCESS_TOKEN));
+            response.getWriter().write("{\"errCode\": "+"-1"+", \"errMsg\": \""+"登录失效，请重新登录！"+"\"}");
             return false;
         }
         Integer uid = accessTokenCache.getUid(accessToken);

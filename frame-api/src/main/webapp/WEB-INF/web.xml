@@ -20,11 +20,14 @@
         <param-value>production</param-value>
     </context-param>
 
-
     <!--Spring ApplicationContext 载入 -->
-    <!--<listener>
-        <listener-class>com.dm.core.spring.listener.InitProfilesContextLoaderListener</listener-class>
-    </listener>-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        <!--<listener-class>com.dm.core.spring.listener.InitProfilesContextLoaderListener</listener-class>-->
+    </listener>
+
+
+
 
     <!-- Spring MVC Servlet -->
     <servlet>
@@ -72,18 +75,6 @@
         <filter-name>openEntityManagerInViewFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
-
-
-    <filter>
-        <filter-name>corsFilter</filter-name>
-        <filter-class>com.dm.api.interceptor.CorsFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>corsFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-
 
 
 </web-app>

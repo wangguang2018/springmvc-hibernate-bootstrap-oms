@@ -1,6 +1,6 @@
 package com.wangguang.services.cache;
 
-import com.dm.model.RedisKeys;
+import com.wangguang.model.RedisKeys;
 import org.springframework.stereotype.Service;
 
 /**

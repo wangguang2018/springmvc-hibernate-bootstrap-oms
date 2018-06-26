@@ -13,9 +13,6 @@
 		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd"
        default-lazy-init="false">
 
-	<context:property-placeholder
-			ignore-resource-not-found="true"
-			location="classpath*:application.properties" />
 
     <context:annotation-config />
 
@@ -35,14 +32,14 @@
 			<props>
 				<prop key="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</prop>
 				<prop key="hibernate.show_sql">false</prop>
-				<prop key="net.sf.ehcache.configurationResourceName">cache/ehcache-hibernate-local.xml</prop>
-				<prop key="hibernate.ejb.naming_strategy">com.dm.model.hibernate.CustomizeNamingStrategy</prop>
+				<!--<prop key="net.sf.ehcache.configurationResourceName">cache/ehcache-hibernate-local.xml</prop>
+				<prop key="hibernate.ejb.naming_strategy">com.dm.model.hibernate.CustomizeNamingStrategy</prop>-->
 				<!--<prop key="hibernate.hbm2ddl.auto">update</prop>-->
 			</props>
 		</property>
 	</bean>
 
-	<bean id="hibernateJpaVendorAdapter"
+	<!--<bean id="hibernateJpaVendorAdapter"
 		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 		<property name="databasePlatform">
 			<bean factory-method="getDialect"
@@ -50,9 +47,14 @@
 				<constructor-arg ref="dataSource" />
 			</bean>
 		</property>
+	</bean>-->
+
+	<bean id="hibernateJpaVendorAdapter"
+		  class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="database" value="MYSQL"/>
 	</bean>
 
-	<bean id="exchangeLimiter" class="com.dm.api.common.ratelimiter.LuaRateLimiter">
+	<!--<bean id="exchangeLimiter" class="com.dm.api.common.ratelimiter.LuaRateLimiter">
 		<constructor-arg index="0">
 			<value>${redis.host}</value>
 		</constructor-arg>
@@ -74,10 +76,10 @@
 		<constructor-arg index="6">
 			<value>${rateLimiter.exchange.luaScriptPath}</value>
 		</constructor-arg>
-	</bean>
+	</bean>-->
 
 
-	<jpa:repositories base-package="com.dm.model.repositories" />
+	<jpa:repositories base-package="com.wangguang.model.repositories" />
 
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
@@ -86,15 +88,15 @@
 	<tx:annotation-driven transaction-manager="transactionManager"
 		proxy-target-class="true" />
 
-    <task:annotation-driven executor="taskExecutor" scheduler="myScheduler" />
+    <!--<task:annotation-driven executor="taskExecutor" scheduler="myScheduler" />
     <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
         <property name="corePoolSize" value="2" />
         <property name="keepAliveSeconds" value="300" />
         <property name="maxPoolSize" value="8" />
         <property name="queueCapacity" value="100" />
-    </bean>
+    </bean>-->
 
-    <task:scheduler id="myScheduler" pool-size="10" />
+   <!-- <task:scheduler id="myScheduler" pool-size="10" />-->
 
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
@@ -104,17 +106,18 @@
 
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
 		  destroy-method="close">
-		<property name="driverClassName" value="${jdbc.driver}" />
-		<property name="url" value="${jdbc.url}" />
-		<property name="username" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
-		<property name="maxActive" value="${jdbc.pool.maxActive}" />
-		<property name="maxIdle" value="${jdbc.pool.maxIdle}"/>
-		<property name="testOnBorrow" value="${jdbc.testOnBorrow}" />
-		<property name="testOnReturn" value="${jdbc.testOnReturn}" />
-		<property name="validationInterval" value="${jdbc.validationInterval}" />
-		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
-		<property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/frame_oms" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+		<property name="maxActive" value="50" />
+		<property name="maxIdle" value="10" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="true" />
+		<property name="validationInterval" value="3000" />
+		<property name="defaultAutoCommit" value="false" />
+		<property name="timeBetweenEvictionRunsMillis" value="900000" />
+		<property name="minEvictableIdleTimeMillis" value="1800000" />
 	</bean>
 
 
